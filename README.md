@@ -28,3 +28,7 @@ Full text of the license is included in [LICENSE.txt](LICENSE.txt) file.
 
 You can also read it in HTML format at
 <https://www.gnu.org/licenses/agpl-3.0.html>
+
+## Directory structure
+
+- [legacy](legacy): History and source code of previous versions of the game

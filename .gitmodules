@@ -1,0 +1,72 @@
+[submodule "legacy/v2-fork-Buttercup2k"]
+	path = legacy/v2-fork-Buttercup2k
+	url = https://github.com/Buttercup2k/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-JohnJuraz"]
+	path = legacy/v2-fork-JohnJuraz
+	url = https://github.com/JohnJuraz/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-Mikoko"]
+	path = legacy/v2-fork-Mikoko
+	url = https://github.com/Mikoko/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-PeteKeller"]
+	path = legacy/v2-fork-PeteKeller
+	url = https://github.com/PeteKeller/Iceege.git
+	branch = master
+[submodule "legacy/v2-fork-Sustan"]
+	path = legacy/v2-fork-Sustan
+	url = https://github.com/Sustan/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-anthoroe"]
+	path = legacy/v2-fork-anthoroe
+	url = https://github.com/anthoroe/LightRising.git
+	branch = master
+[submodule "legacy/v2-fork-bsharpe"]
+	path = legacy/v2-fork-bsharpe
+	url = https://github.com/bsharpe/shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-hexagoncode"]
+	path = legacy/v2-fork-hexagoncode
+	url = https://github.com/hexagoncode/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-valitas"]
+	path = legacy/v2-fork-valitas
+	url = https://github.com/valitas/Shintolin.git
+	branch = master
+[submodule "legacy/v2-fork-wjherron"]
+	path = legacy/v2-fork-wjherron
+	url = https://github.com/wjherron/shintolin-source-code.git
+	branch = master
+[submodule "legacy/v2-original"]
+	path = legacy/v2-original
+	url = https://github.com/IsaacLewis/Shintolin.git
+	branch = master
+[submodule "legacy/v3-fork-Ionshard"]
+	path = legacy/v3-fork-Ionshard
+	url = https://github.com/Ionshard/shintolin.git
+	branch = master
+[submodule "legacy/v3-fork-JohnJuraz"]
+	path = legacy/v3-fork-JohnJuraz
+	url = https://github.com/JohnJuraz/shintolin-1.git
+	branch = master
+[submodule "legacy/v3-fork-nlndz"]
+	path = legacy/v3-fork-nlndz
+	url = https://github.com/nlndz/shintolin-1.git
+	branch = master
+[submodule "legacy/v3-fork-tmpillbox"]
+	path = legacy/v3-fork-tmpillbox
+	url = https://github.com/tmpillbox/shintolin.git
+	branch = master
+[submodule "legacy/v3-original"]
+	path = legacy/v3-original
+	url = https://github.com/troygoode/shintolin.git
+	branch = master
+[submodule "legacy/v4-import"]
+	path = legacy/v4-import
+	url = https://github.com/troygoode/shintolin4-import.git
+	branch = master
+[submodule "legacy/v4-original"]
+	path = legacy/v4-original
+	url = https://github.com/troygoode/shintolin4.git
+	branch = master
