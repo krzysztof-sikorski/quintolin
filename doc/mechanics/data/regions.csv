@@ -1,0 +1,29 @@
+"id","key","name","animals_per_100"
+1,"Gods_Glade","Gods Glade",
+2,"Midlands","The Midlands","deer => 1.5, boar => 2, wolf => 0.7"
+3,"Wilderness","The Wilderness",
+4,"Hermit_Lake","Hermit Lake","hare => 1.6, goose => 1.8, sabre_tooth => 0.2"
+5,"Ferals","The Feral Hills","deer => 1, stag => 0.2, mountain_lion => 0.3"
+7,"Euphenics","River Euphenics",
+6,"Another_River","Another River",
+8,"Border_Lake","Lake Bokrug",
+9,"Border_River","Border River","goose => 1"
+10,"Eastern_Marshes","Strongholm Marshes","goose => 1.5, croc => 0.6"
+11,"Islands","Scavenger Isles","goose => 2, pheasant => 1"
+12,"Latis_Plains","Latis Plains","buffalo => 1.4, sabre_tooth => 0.2"
+13,"River_Dea","River Dea","goose => 0.6, croc => 0.2"
+14,"Sacred_Hill","Sacred Hill",
+15,"Dark_Forest","The Dark Forest","boar => 2, wolf => 0.5, bear => 0.2, squirrel => 0.2"
+16,"Wandering_Creek","Wandering Creek",
+17,"Weeping_Woods","Weeping Woods","boar => 2, pheasant => 2, squirrel => 0.5"
+18,"Winding_River","Winding River",
+19,"Northern_Crags","Northern Crags",
+20,"Westwood","The Westwood","beehive => 0.5, bear => 0.2, stag => 1"
+21,"New_2","Terra Nullis Er",
+22,"New_3","Terra Nullis San",
+23,"New_4","Terra Nullis Si",
+24,"New_5","Terra Nullis Wu",
+25,"New_6","Terra Nullis Liu",
+26,"New_7","Terra Nullis Qi",
+27,"New_8","Terra Nullis Ba",
+28,"New_9","Terra Nullis Jiu",
