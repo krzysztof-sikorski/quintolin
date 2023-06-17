@@ -31,6 +31,8 @@ You can also read it in HTML format at
 
 ## Directory structure
 
+- [core](core/README.md): core engine of the game
 - [doc](doc/README.md): developer documentation
 - [legacy](legacy/README.md): History and source code of previous versions of
   the game
+- [website](website/README.md): website and UI

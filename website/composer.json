@@ -1,0 +1,44 @@
+{
+  "name": "quintolin/website",
+  "description": "Website and UI for Quintolin PBBG",
+  "version": "0.0.1-dev",
+  "type": "project",
+  "keywords": [
+    "game",
+    "pbbg"
+  ],
+  "homepage": "https://www.shintolin.com/",
+  "readme": "README.md",
+  "license": "AGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Krzysztof Sikorski",
+      "homepage": "https://zerozero.pl/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "chat": "https://discord.gg/ZKTSKne"
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Quintolin\\Website\\": "src/"
+    }
+  },
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../core"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "notify-on-install": false,
+    "platform-check": true
+  }
+}

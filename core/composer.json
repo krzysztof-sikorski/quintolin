@@ -1,0 +1,31 @@
+{
+  "name": "quintolin/core",
+  "description": "Core engine for Quintolin PBBG",
+  "version": "0.0.1-dev",
+  "type": "library",
+  "keywords": [
+    "game",
+    "pbbg"
+  ],
+  "homepage": "https://www.shintolin.com/",
+  "readme": "README.md",
+  "license": "AGPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Krzysztof Sikorski",
+      "homepage": "https://zerozero.pl/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "chat": "https://discord.gg/ZKTSKne"
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Quintolin\\Core\\": "src/"
+    }
+  }
+}
