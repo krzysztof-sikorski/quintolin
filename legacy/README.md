@@ -31,7 +31,7 @@ The first open source version, also written by Isaac Lewis. Used Ruby and MySQL.
 ## Version 3
 
 The third version, re-implemented for a different infrastructure by Troy Goode
-(known in-game as Ecce). Uses JavaScript/TypeScript and MongoDB.
+(known in-game as Ecce). Uses NodeJS and MongoDB.
 
 - [Original implementation](v3-original)
 - [fork by nlndz](v3-fork-nlndz) (outdated copy of original)
@@ -44,7 +44,7 @@ The third version, re-implemented for a different infrastructure by Troy Goode
 
 ## Version 4
 
-Unfinished prototype by Troy Goode. Uses TypeScript and PostgreSQL.
+Unfinished prototype by Troy Goode. Uses NodeJS and PostgreSQL.
 
 - [Game prototype](v4-original)
 - [Database importer (v3 => v4)](v4-import)
