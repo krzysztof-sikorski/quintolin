@@ -1,6 +1,9 @@
 # Animals
 
-Documentation how animals were stored in previous versions of the game.
+Documentation how animals were defined in previous versions of the game.
+
+Definitions from v2 are stored in [animals.csv](data/animals.csv) file.
+Description of columns below.
 
 | Field         | Data type          | Description                                                                  |
 |---------------|--------------------|------------------------------------------------------------------------------|

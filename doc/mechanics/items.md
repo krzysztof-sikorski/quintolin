@@ -1,6 +1,9 @@
 # Items
 
-Documentation how items were stored in previous versions of the game.
+Documentation how items were defined in previous versions of the game.
+
+Definitions from v2 are stored in [items.csv](data/items.csv) file.
+Description of columns below.
 
 | Field          | Data type                    | Description                                                                               |
 |----------------|------------------------------|-------------------------------------------------------------------------------------------|
