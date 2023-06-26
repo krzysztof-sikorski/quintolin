@@ -21,7 +21,13 @@
     "chat": "https://discord.gg/ZKTSKne"
   },
   "require": {
-    "php": "^8.0"
+    "php": "^8.1",
+    "ext-ctype": "*",
+    "ext-iconv": "*",
+    "ext-pcre": "*",
+    "ext-session": "*",
+    "ext-simplexml": "*",
+    "ext-tokenizer": "*"
   },
   "autoload": {
     "psr-4": {
