@@ -13,3 +13,7 @@ max_line_length = 80
 # settings required by PSR-12 standard
 indent_size = 4
 max_line_length = 120
+
+[/website/{bin/console, config/**/*.yaml}]
+indent_size = 4
+max_line_length = 120
