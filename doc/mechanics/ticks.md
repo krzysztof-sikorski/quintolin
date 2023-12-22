@@ -127,11 +127,19 @@ for hungry) and it reduces AP regeneration instead of reducing HP.
 For each settlement, member with the most supporters is set as the leader.
 Users with **active == false** or **HP == 0** are not counted as supporters.
 
-## Grow fields
+## Grow fields (v2)
 
 If **season is not Summer** then do nothing.
 
-For each **wheat_field** tile, set **HP := min(HP * 4, 200)**.
+For each **wheat_field** tile, set **HP := min(HP * 4, 200)**
+(HP directly translates to yield from harvest action).
+
+## Grow fields (v3)
+
+If field is watered, then set **HP := HP + 9**.
+If field is not watered, then set **HP := HP + 3**.
+
+Also set **overuse := overuse - 0.5**
 
 ## Deactivate users
 
