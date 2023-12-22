@@ -48,7 +48,7 @@ Regenerated amount depends on many factors:
   (side effect of database structure)
 - *In v3*: regeneration is reduced by hunger (details below)
 - *In v3*: regeneration cannot be lower than **1 AP / hour**
-- *In v3*: inactive users and dead users do not regenerate AP
+- *In v3*: inactive users do not regenerate AP
   (inactive users are defined as users that did not act in the last **5 days**)
 
 ### Hunger debuff
