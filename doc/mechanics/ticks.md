@@ -113,10 +113,14 @@ do not have **full AP** or have executed an action in the last **24h**.
 For each eligible user:
 
 - If **hunger > 0** then set **Hunger := Hunger - 1** and skip to the next user
-- If user has any food (items marked with **use==eat**) then eat a random food
-  and skip to the next user
+- If user has any food then eat a random food and skip to the next user
+  (*in v2* food is defined as items marked with **use=eat**,
+  while *in v3* food is defined as items with `food` tag)
 - Set **HP := max(HP - 3, 0)**
 - Set **Max_HP := max(Max_HP -2, 25)**
+
+*In v3* appearance of hunger stat is reversed (full bar for satiated, empty bar
+for hungry) and it reduces AP regeneration instead of reducing HP.
 
 ## Update settlement leader
 
