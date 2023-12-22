@@ -6,28 +6,30 @@ Documentation about background operations ("ticks").
 
 Both v2 and v3 were using `crontab` to execute ticks.
 
-Ticks were grouped in four ets, differing by their frequency:
+Ticks were grouped in sets, differing by their frequency:
 
 - Daily tick (every midnight)
 - Hunger tick (every 8 hours: at 00:00, 08:00, 16:00)
 - Hourly tick (every full hour)
 - Minutely tick (every full minute, only used in v3)
 
-| Operation                | Schedule |
-|--------------------------|----------|
-| Restore AP               | Hourly   |
-| Burn campfires           | Hourly   |
-| Move animals             | Hourly   |
-| Hunger                   | Hunger   |
-| Update settlement leader | Daily    |
-| Grow fields              | Daily    |
-| Deactivate users         | Daily    |
-| Restore search odds      | Daily    |
-| Reset daily IP limits    | Daily    |
-| Spawn animals            | Daily    |
-| Terrain transitions      | Daily    |
-| Rot food                 | Daily    |
-| Damage buildings         | Daily    |
+| Operation                   | Schedule                     |
+|-----------------------------|------------------------------|
+| Restore AP                  | Hourly in v2, Minutely in v3 |
+| Burn campfires              | Hourly                       |
+| Move animals                | Hourly in v2, Minutely in v3 |
+| Check settlement membership | Never in v2, Hourly in v3    |
+| Drowning damage             | Never in v2, Hourly in v3    |
+| Hunger                      | Hunger in v2, Daily in v3    |
+| Update settlement leader    | Daily                        |
+| Grow fields                 | Daily                        |
+| Deactivate users            | Daily                        |
+| Restore search odds         | Daily                        |
+| Reset daily IP limits       | Daily                        |
+| Spawn animals               | Daily                        |
+| Terrain transitions         | Daily                        |
+| Rot food                    | Daily                        |
+| Damage buildings            | Daily                        |
 
 ## Restore AP
 
