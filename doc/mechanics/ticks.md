@@ -33,17 +33,32 @@ Ticks were grouped in sets, differing by their frequency:
 
 ## Restore AP
 
-Every character regenerates AP.
+Every character regenerates some AP.
 
 Regenerated amount depends on many factors:
 
-- If **HP == 0** then regenerate **1 AP**
-- Otherwise regenerate **3 AP** plus bonuses from building and terrain type
+- If **HP == 0** then regenerate **1 AP / hour**
+- Otherwise regenerate **3 AP / hour** plus bonuses from building and terrain
 - Building bonus is defined in building definition
+- *In v3*: if building's' `max_occupancy` is greater than zero,
+  then building bonus is applied only if number of characters inside
+  the building is not greater than `max_occupancy`
 - Tile bonus is defined in terrain type definition
-- Final AP value is rounded to first decimal digit
+- *In v2*: the final value of AP is rounded to first decimal digit
+  (side effect of database structure)
+- *In v3*: regeneration is reduced by hunger (details below)
+- *In v3*: regeneration cannot be lower than **1 AP / hour**
+- *In v3*: inactive users and dead users do not regenerate AP
+  (inactive users are defined as users that did not act in the last **5 days**)
 
-## Burn campfires
+### Hunger debuff
+
+- If **hunger > 9.0** then there is no debuff
+- Set **hunger_ratio := (Max_Hunger - hunger) / Max_Hunger**
+- Set **debuff := 2.0 * hunger_ratio**
+- Set **recovered_AP := recovered_AP - debuff**
+
+## Burn campfires (v2)
 
 Roll a dice for each campfire on map.
 There is **50%** chance that it will be damaged.
