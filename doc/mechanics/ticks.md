@@ -73,8 +73,22 @@ If a campfire is damaged:
 
 If animal has **immobile = True** then it never moves.
 
-Otherwise it tries **8 times** to move in a random direction to adjacent tile.
-The move succeeds if destination tile is allowed by animal's **habitats** list.
+Otherwise the game searches for adjacent tiles that have a terrain type
+that matches animal's preferred types.
+
+*In v2* a terrain type matches if its `type` is listed in animal's **habitats**
+list.
+
+*In v3* a terrain type matches if one of its `tags` is listed in animal's
+**habitats** list.
+
+After the list of matching tiles is determined, the game picks a random tile
+from that list and moves the animal into it.
+
+*In v2* if there is no matching tile then the animal is stuck and never moves.
+
+*In v3* if there is no matching tile then the animal moves randomly to any one
+of adjacent tiles.
 
 ## Hunger
 
