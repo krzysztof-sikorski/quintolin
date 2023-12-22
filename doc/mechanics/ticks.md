@@ -95,6 +95,16 @@ of adjacent tiles.
 If user has been a provisional member for at least **1 day**, then they are
 promoted to full membership.
 
+## Drowning damage
+
+Check each character if they are drowning:
+
+- If character is in **deep water** tile then they are drowning.
+- If character is in **shallow water** and do not know **swimming**
+  then they are drowning.
+
+If character is drowning then set **HP := HP - 1**
+
 ## Hunger
 
 Hunger mechanic is only applied to users that are **active == true** and either:
