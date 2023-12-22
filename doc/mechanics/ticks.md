@@ -90,6 +90,11 @@ from that list and moves the animal into it.
 *In v3* if there is no matching tile then the animal moves randomly to any one
 of adjacent tiles.
 
+## Check settlement membership
+
+If user has been a provisional member for at least **1 day**, then they are
+promoted to full membership.
+
 ## Hunger
 
 Hunger mechanic is only applied to users that are **active == true** and either:
