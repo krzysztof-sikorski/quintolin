@@ -99,9 +99,9 @@ promoted to full membership.
 
 Check each character if they are drowning:
 
-- If character is in **deep water** tile then they are drowning.
-- If character is in **shallow water** and do not know **swimming**
-  then they are drowning.
+- If terrain type is tagged `deep` then the character is drowning.
+- If terrain type is tagged `shallow` and the character does not know
+  the **swimming** skill, then the character is drowning.
 
 If character is drowning then set **HP := HP - 1**
 
