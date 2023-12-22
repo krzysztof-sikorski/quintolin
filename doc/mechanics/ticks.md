@@ -58,7 +58,7 @@ Regenerated amount depends on many factors:
 - Set **debuff := 2.0 * hunger_ratio**
 - Set **recovered_AP := recovered_AP - debuff**
 
-## Burn campfires (v2)
+## Burn campfires
 
 Roll a dice for each campfire on map.
 There is **50%** chance that it will be damaged.
