@@ -1,15 +1,15 @@
-"id","key","name","habitats","max_hp","when_attacked","attack_dmg","loot","immobile"
-1,"deer","deer","forest, open",30,"flee => 60","null","raw_meat => 8, pelt => 1","false"
-2,"boar","wild boar","forest",20,"flee => 25, attack => 25",2,"raw_meat => 3, pelt => 1","false"
-3,"wolf","wolf","forest, open",50,"attack => 45",3,"raw_meat => 6, wolf_pelt => 1","false"
-4,"hare","hare","open",10,"flee => 80, attack => 10",1,"raw_meat => 2, small_pelt => 1","false"
-5,"mountain_lion","mountain lion","open, hills",70,"attack => 45",3,"raw_meat => 8, lion_pelt => 1","false"
-6,"sabre_tooth","sabre-tooth tiger","open",100,"attack => 45",5,"raw_meat => 10, pelt => 1, sabre_tooth => 2","false"
-7,"bear","bear","forest",200,"attack => 30, flee => 8",3,"raw_meat => 20, bear_skin => 1","false"
-8,"squirrel","squirrel","forest",6,"attack => 10, flee => 80",1,"raw_meat => 1, small_pelt => 1","false"
-9,"croc","crocodile","wetland, shallow_water, beach",100,"flee => 10, attack => 40",5,"croc_skin => 1, raw_meat => 7","false"
-10,"goose","goose","shallow_water, deep_water, beach, wetland",15,"flee => 60","null","raw_meat => 3","false"
-11,"buffalo","buffalo","open",100,"flee => 15, attack => 40",4,"raw_meat => 20, pelt => 1, horn => 2","false"
-12,"pheasant","pheasant","forest",10,"flee => 60","null","raw_meat => 3","false"
-13,"stag","stag","forest, open",45,"flee => 60","null","raw_meat => 10, pelt => 1, antler => 2","false"
-14,"beehive","beehive","forest",20,"attack => 80",1,,"true"
+"id","key","name","habitats (v2)","habitats (v3)","max_hp","when_attacked","attack_dmg","loot","immobile"
+1,"deer","deer","forest, open","trees, open",30,"flee => 60","null","raw_meat => 8, pelt => 1","false",
+2,"boar","wild boar","forest",trees,20,"flee => 25, attack => 25",2,"raw_meat => 3, pelt => 1","false",
+3,"wolf","wolf","forest, open","open, trees",50,"attack => 45",3,"raw_meat => 6, wolf_pelt => 1","false",
+4,"hare","hare","open",open,10,"flee => 80, attack => 10",1,"raw_meat => 2, small_pelt => 1","false",
+5,"mountain_lion","mountain lion","open, hills","open, hill",70,"attack => 45",3,"raw_meat => 8, lion_pelt => 1","false",
+6,"sabre_tooth","sabre-tooth tiger","open",trees,100,"attack => 45",5,"raw_meat => 10, pelt => 1, sabre_tooth => 2","false",
+7,"bear","bear","forest",trees,200,"attack => 30, flee => 8",3,"raw_meat => 20, bear_skin => 1","false",
+8,"squirrel","squirrel","forest",trees,6,"attack => 10, flee => 80",1,"raw_meat => 1, small_pelt => 1","false",
+9,"croc","crocodile","wetland, shallow_water, beach","wetland, shallow",100,"flee => 10, attack => 40",5,"croc_skin => 1, raw_meat => 7","false",
+10,"goose","goose","shallow_water, deep_water, beach, wetland","wetland, shallow, deep",15,"flee => 60","null","raw_meat => 3","false",
+11,"buffalo","buffalo","open",open,100,"flee => 15, attack => 40",4,"raw_meat => 20, pelt => 1, horn => 2","false",
+12,"pheasant","pheasant","forest",trees,10,"flee => 60","null","raw_meat => 3","false",
+13,"stag","stag","forest, open","open, trees",45,"flee => 60","null","raw_meat => 10, pelt => 1, antler => 2","false",
+14,"beehive","beehive","forest",trees,20,"attack => 80",1,,"true",
