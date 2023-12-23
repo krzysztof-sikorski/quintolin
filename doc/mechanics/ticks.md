@@ -107,20 +107,18 @@ If character is drowning then set **HP := HP - 1**
 
 ## Hunger
 
-Hunger mechanic is only applied to users that are **active == true** and either:
-do not have **full AP** or have executed an action in the last **24h**.
+Hunger tick is only applied to characters that are "active",
+which means they have done any kind of action (move, use, etc)
+in the last **24 hours**.
 
-For each eligible user:
+*In v2* it is also applied to characters that do not have **full AP**.
 
-- If **hunger > 0** then set **Hunger := Hunger - 1** and skip to the next user
-- If user has any food then eat a random food and skip to the next user
-  (*in v2* food is defined as items marked with **use=eat**,
-  while *in v3* food is defined as items with `food` tag)
-- Set **HP := max(HP - 3, 0)**
-- Set **Max_HP := max(Max_HP -2, 25)**
+For each eligible character:
 
-*In v3* appearance of hunger stat is reversed (full bar for satiated, empty bar
-for hungry) and it reduces AP regeneration instead of reducing HP.
+- If **hunger > 0** then set **hunger := hunger - 1**
+- If the character has any food, then "eat" a random food (send a system message
+  and remove the item from inventory) and skip the following steps
+- *Only in v2:* set **HP := max(HP - 3, 0)** and **Max_HP := max(Max_HP -2, 25)**
 
 ## Update settlement leader
 
