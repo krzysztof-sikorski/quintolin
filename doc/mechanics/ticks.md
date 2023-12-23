@@ -123,7 +123,10 @@ For each eligible character:
 ## Update settlement leader
 
 For each settlement, member with the most supporters is set as the leader.
-Users with **active == false** or **HP == 0** are not counted as supporters.
+
+Inactive characters are not counted as supporters.
+
+*In v2* dead characters are also not counted as supporters.
 
 ## Grow fields (v2)
 
