@@ -4,7 +4,7 @@
 - [Background ticks](ticks.md)
 - [Hunger](hunger.md)
 
-## Static objects
+## Configuration
 
 - [Animals](animals.md)
 - [Buildings](buildings.md)
