@@ -25,7 +25,7 @@ Ticks were grouped in sets, differing by their frequency:
 | Grow fields                 | Daily                        |
 | Deactivate users            | Daily                        |
 | Restore search odds         | Daily                        |
-| Reset daily IP limits       | Daily                        |
+| Reset daily IP limits       | Daily in v2, Never in v3     |
 | Spawn animals               | Daily                        |
 | Terrain transitions         | Daily                        |
 | Rot food                    | Daily                        |
@@ -118,7 +118,8 @@ For each eligible character:
 - If **hunger > 0** then set **hunger := hunger - 1**
 - If the character has any food, then "eat" a random food (send a system message
   and remove the item from inventory) and skip the following steps
-- *Only in v2:* set **HP := max(HP - 3, 0)** and **Max_HP := max(Max_HP -2, 25)**
+- *Only in v2:* set **HP := max(HP - 3, 0)** and **Max_HP := max(Max_HP -2, 25)
+  **
 
 ## Update settlement leader
 
@@ -150,6 +151,13 @@ if they executed no actions in the last **5 days**.
 ## Restore search odds
 
 This is documented on [search](search.md) page.
+
+## Reset daily IP limits
+
+*In v2* the game was tracking player IPs and blocking user interface if too many
+character actions were executed from the same IP.
+
+These counters were reset on daily tick.
 
 ## Spawn animals
 
