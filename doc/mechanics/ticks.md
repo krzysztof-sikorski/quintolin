@@ -197,9 +197,10 @@ Overall the transitions revert results of tile depletion.
 
 ## Rot food
 
-Chance for rot is defined in global setting **Food_Rot_Chance**.
+Every food item has the same **4%** chance to rot on daily tick.
 
-Rot is only applied to food (items with **use=eat**).
+- *In v2* food is defined as item with **use=eat**
+- *In v3* food is defined as item with `food` tag
 
 Roll dice for each food item in inventory and for each food item in stockpile.
 On success change item type to **rotten_food**.
