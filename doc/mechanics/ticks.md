@@ -179,10 +179,21 @@ For each animal on the map:
 Some terrain types can transition to other terrain types.
 Roll a dice for each tile with such type, on success change terrain type.
 
-New terrain type is defined in **transition** field.
+*In v2* new terrain type is defined in **transition** field.
 Transition chances for each season are defined in **transition_odds** field.
 If **transition_odds** is a single number then the chance is the same for each
 season.
+
+*In v3* all transition logic (new terrain type, transition chance,
+and the dice roll itself) is encapsulated in terrain type definitions.
+
+Overall the transitions revert results of tile depletion.
+
+*In v2* a forest can regrow unless it was chopped down into grass.
+*In v3* a forest can regrow even from grass or dirt, given enough time.
+
+*In v2* a forgotten wheat field will transform into empty field and then grass.
+*In v2* a field is implemented as a building and not as a separate terrain type.
 
 ## Rot food
 
