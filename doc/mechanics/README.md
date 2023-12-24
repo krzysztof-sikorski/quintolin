@@ -3,6 +3,7 @@
 - [Global settings](globals.md)
 - [Background ticks](ticks.md)
 - [Hunger](hunger.md)
+- [Search](search.md)
 
 ## Configuration
 

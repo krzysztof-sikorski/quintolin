@@ -149,13 +149,7 @@ if they executed no actions in the last **5 days**.
 
 ## Restore search odds
 
-Roll a dice for each tile, chance for restore is defined as **restore_odds**
-in terrain type.
-
-If a tile is restored and it is **dirt_track**
-then change it into **grassland** with **1 HP**.
-
-If a tile is restored and it is any other type, set **HP := min(HP+1, Max HP)**.
+This is documented on [search](search.md) page.
 
 ## Spawn animals
 
