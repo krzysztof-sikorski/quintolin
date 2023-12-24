@@ -29,7 +29,7 @@ Ticks were grouped in sets, differing by their frequency:
 | Spawn animals               | Daily                        |
 | Terrain transitions         | Daily                        |
 | Rot food                    | Daily                        |
-| Damage buildings            | Daily                        |
+| Storm damage                | Daily                        |
 
 ## Restore AP
 
@@ -205,14 +205,18 @@ Every food item has the same **4%** chance to rot on daily tick.
 Roll dice for each food item in inventory and for each food item in stockpile.
 On success change item type to **rotten_food**.
 
-## Damage buildings
+## Storm damage
 
 Roll a dice for each region.
 There is a hard-coded **10%** chance that the region will be hit by storm.
 
-For each building in a region that was hit by storm:
+Roll a dice for each building in affected regions.
 
-- If building has **special == settlement** then it is not damaged.
-  Currently that flag is only set for totems.
-- Set damage to random integer **between -5 and 10**
-- If **damage > 0** then deal that damage to the building as if it was attacked.
+There is **1/3** chance that the building was not damaged.
+If it was damaged, then the damage is a number **between 1 and 9**.
+
+Some buildings are less affected by storms:
+
+- **Totem Pole** is completely immune to storms
+- *In v3:* **Ruins** are also completely immune to storms
+- *In v3:* damage to **Gate**, **Guardstand**, and **Wall** is reduced by **3**
