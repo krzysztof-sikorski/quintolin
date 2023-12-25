@@ -10,9 +10,14 @@
 - If total chance is zero then display system message and skip next steps
 - Pick a random number (0%-100%)
 - Compare the number with the loot table to determine if and what was found
-- If no item was found then display system message and skip next steps
-- Update character's inventory
+- If an item was found then update character inventory
+- If no item was found but tile contains dropped items, then select a random
+  stack of dropped items and transfer some items (as much as possible but no
+  more than 10) from that stack into character's inventory
+- If completely no items were found (nor in loot table, nor in dropped items)
+  then display system message and skip the next steps
 - Update tile depletion (details below)
+- Display system message about item found and tile depletion (details below)
 
 ## Depletion in v2
 
@@ -55,3 +60,17 @@ as dirt.
 After an item was found, a second random number is rolled, this time to check
 if tile transformed into a next depletion level. The chance for that
 transformation is equal to found item's find chance in calculated loop table.
+
+## Message about tile depletion
+
+Format of the message is "This area appears to have [DESCRIPTION]."
+Message about complete depletion is always displayed, but other depletion
+levels require *Foraging* skill.
+
+| Depletion description  | Condition                            |
+|------------------------|--------------------------------------|
+| been picked clean      | total_odds = 0 (nothing to be found) |
+| very limited resources | 0% < total_odds <= 10%               |
+| limited resources      | 10% < total_odds <= 20%              |
+| moderate resources     | 20% < total_odds <= 30%              |
+| abundant resources     | total_odds > 30%                     |
