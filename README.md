@@ -29,6 +29,16 @@ Full text of the license is included in [LICENSE.txt](LICENSE.txt) file.
 You can also read it in HTML format at
 <https://www.gnu.org/licenses/agpl-3.0.html>
 
+## Source code
+
+This project is published to multiple core-sharing portals:
+
+- [Codeberg](https://codeberg.org/krzysztof-sikorski/quintolin)
+- [Disroot](https://git.disroot.org/krzysztof-sikorski/quintolin)
+- [GitLab](https://gitlab.com/krzysztof-sikorski/quintolin)
+- [GitHub](https://github.com/krzysztof-sikorski/quintolin)
+- [Bitbucket](https://bitbucket.org/zerozero-pl/quintolin)
+
 ## Directory structure
 
 - [core](core/README.md): core engine of the game
