@@ -1,10 +1,6 @@
 # Differences between versions
 
-This page summarises differences between original v2/v3 and their forks.
-
-## Fork of v2 by Hexagon
-
-No differences.
+This page summarises differences between original v2 and its "official" forks.
 
 ## Fork of v2 by Miko
 
