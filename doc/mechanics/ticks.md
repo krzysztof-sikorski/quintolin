@@ -13,24 +13,24 @@ Ticks were grouped in sets, differing by their frequency:
 - Hourly tick (every full hour)
 - Minutely tick (every full minute, only used in v3)
 
-| Operation                   | Schedule                     |
-|-----------------------------|------------------------------|
-| Restore AP                  | Hourly in v2, Minutely in v3 |
-| Burn campfires              | Hourly                       |
-| Move animals                | Hourly in v2, Minutely in v3 |
-| Check settlement membership | Never in v2, Hourly in v3    |
-| Drowning damage             | Never in v2, Hourly in v3    |
-| Hunger                      | Hunger in v2, Daily in v3    |
-| Update settlement leader    | Daily                        |
-| Grow fields                 | Daily                        |
-| Deactivate users            | Daily                        |
-| Restore search odds         | Daily                        |
-| Reset daily IP limits       | Daily in v2, Never in v3     |
-| Spawn animals               | Daily                        |
-| Terrain transitions         | Daily                        |
-| Delete rotten food          | Daily in v2, Never in v3     |
-| Rot food                    | Daily                        |
-| Storm damage                | Daily                        |
+| Operation                   | Schedule                                                       |
+|-----------------------------|----------------------------------------------------------------|
+| Restore AP                  | Hourly in v2, Minutely in v3                                   |
+| Burn campfires              | Hourly                                                         |
+| Move animals                | Hourly in v2, Minutely in v3                                   |
+| Check settlement membership | Never in original v2, Hourly in Buttercup's fork, Hourly in v3 |
+| Drowning damage             | Never in v2, Hourly in v3                                      |
+| Hunger                      | Hunger in v2, Daily in v3                                      |
+| Update settlement leader    | Daily                                                          |
+| Grow fields                 | Daily                                                          |
+| Deactivate users            | Daily                                                          |
+| Restore search odds         | Daily                                                          |
+| Reset daily IP limits       | Daily in v2, Never in v3                                       |
+| Spawn animals               | Daily                                                          |
+| Terrain transitions         | Daily                                                          |
+| Delete rotten food          | Daily in v2, Never in v3                                       |
+| Rot food                    | Daily                                                          |
+| Storm damage                | Daily                                                          |
 
 ## Restore AP
 
@@ -93,8 +93,13 @@ of adjacent tiles.
 
 ## Check settlement membership
 
-If user has been a provisional member for at least **1 day**, then they are
-promoted to full membership.
+*In original v2* this operation was not implemented.
+
+*In Buttercup's fork:* if user has been a temporary member for at least **24h**
+and they were not dazed, then they were promoted to full membership.
+
+*In v3:* if user has been a provisional member for at least **1 day**,
+then they were promoted to full membership.
 
 ## Drowning damage
 
@@ -140,6 +145,9 @@ If **season is not Summer** then do nothing.
 For each **wheat_field** and **wheat_field_watered** tile,
 set **HP := min(HP * 6, 200)**
 (HP directly translates to yield from harvest action).
+
+*In Buttercup's fork* growth formula was changed to:
+`HP := min(HP * 3.5 + 3, 200)`
 
 ## Grow fields (v3)
 
@@ -230,4 +238,5 @@ If it was damaged, then the damage is a number **between 1 and 9**.
 Some buildings are less affected by storms:
 
 - **Totem Pole** and **Ruins** are completely immune to storms
+- *In Buttercup's fork of v2:* damage to walls is reduced by **3**
 - *In v3:* damage to **Gate**, **Guardstand**, and **Wall** is reduced by **3**

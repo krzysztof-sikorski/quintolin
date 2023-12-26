@@ -80,3 +80,7 @@ levels require *Foraging* skill.
 | limited resources      | 10% < total_odds <= 20%              |
 | moderate resources     | 20% < total_odds <= 30%              |
 | abundant resources     | total_odds > 30%                     |
+
+*In Buttercup's fork* an additional adjective ("very abundant") was added
+for `total_odds > 40%`. The fork also added a second sentence describing how
+tile's HP compared to average/expected HP.

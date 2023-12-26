@@ -47,3 +47,29 @@ No differences.
 
 - Changed adjectives used in description of building's HP
 - Blocked possibility to attack oneself and to attack while dazed
+
+## Fork of v2 by Buttercup
+
+### Changes to mechanics and new features
+
+- Implemented temporary membership mechanic
+- Implemented leaving a settlement
+- Implemented "gate house" building
+- Adjusted stats of field and guard stand buildings
+- Adjusted stats of stone axe
+- Adjusted stats of some terrain types
+- Changed harvesting action to give XP
+- Adjusted effect of watering a field
+
+### Bug fixes
+
+- Blocked "give" and "take" actions to be executed in situations
+  where they would over-encumber target character
+- Fixed repair action to not be available for campfires
+  and for buildings with no damage
+- Blocked revive action when character was within borders of foreign settlement
+- Blocked reviving of starving characters (defined as `hunger = 0`)
+
+### Other changes
+
+- Added "very abundant" state to tile abundance scale

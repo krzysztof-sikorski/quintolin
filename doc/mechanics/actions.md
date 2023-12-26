@@ -183,22 +183,37 @@ This is represented internally in a different way depending on game version:
 
 XP gain also depends on version:
 
-- *in v2* this action does not give XP
+- *in original v2* this action does not give XP
+- *since Buttercup's fork* this action gives **4 herbalist XP**
 - *in v3* this action gives **4 herbalist XP**
 
 ## Join/Leave
 
 To join a settlement, character has to be in the same tile as the settlement's
-**Totem Pole**. Leaving a settlement can be done anywhere.
+**Totem Pole**.
 
 *In v2* joining a settlement does not cost AP.
 *In v3* joining a settlement costs **25 AP**.
-In both versions leaving does not cost AP.
-Both actions do not give XP.
+In both versions joining does not give XP.
 
-*In v3* joining a settlement is done in two stages: applicant first becomes
+*In original v2* joining a settlement was a simple process with no verification
+or trial period.
+
+*In Buttercup's fork of v2* joining a settlement was done in two stages:
+first the character became a temporary member, then they had to survive
+**24 hours** without being dazed, after that they were promoted to full member.
+
+*In v3* joining a settlement is also done in two stages: applicant first becomes
 a *provisional* member, and later then can be promoted to a normal member
 by settlement's leader, or they get promoted automatically during a daily tick.
+
+## Leave
+
+Leaving was not possible *in original v2*, instead characters could only
+switch membership to a different settlement.
+
+Leaving a settlement can be done anywhere.
+It does not cost AP and does not give XP.
 
 ## Kick
 
@@ -242,6 +257,8 @@ and available only on `ocarina` item.
 
 Using an ocarina sends a system message ("X played an ocarina")
 to its user and all nearby characters.
+
+*In Buttercup's fork* using an ocarina costs **0.2 AP**.
 
 ## Quarry
 
@@ -313,16 +330,19 @@ The action costs **15 AP** and **10 pieces** of an item marked with
 This action can also fail if the tile is overused. Exact mechanic is different
 between versions:
 
-- *In v2* every sowing has a constant chance of **20%** to fail, even if the
-  tile was never sown before. On failure a system message about "overfarming"
-  is displayed, the whole action is cancelled (without spending AP nor items)
-  and tile's terrain type is changed to **dirt_track**.
+- *In original v2* every sowing has a constant chance of **20%** to fail,
+  even if the tile was never sown before. On failure a system message about
+  "overfarming" is displayed, the whole action is cancelled (without spending AP
+  nor items) and tile's terrain type is changed to **dirt_track**.
+- *In Buttercup's fork of v2* the check was adjusted to always reduce tile's HP
+  if it was greater than **3 HP**.
 - *In v3* the game tracks usage in **overuse** property:
   - the game blocks ability to create **field** when **overuse > 24**
   - sowing sets **HP := 1** and sets **overuse := overuse + 12** on tile
   - **overuse** slowly decreases on daily tick
 
-*In v2* This action does not give XP.
+*In original v2* This action does not give XP.
+*In Buttercup's fork of v2* this action gives **5 herbalist XP**.
 *In v3* this action gives **10 herbalist XP**.
 
 ## Take
@@ -373,12 +393,17 @@ Otherwise damage tile by **1 HP** and display message about damaging the crops.
 
 In both cases the action gives **1 herbalist XP**.
 
-## Watering in v2 since Miko's fork
+### Watering in Miko's fork of v2
 
 Watering cannot damage the field and growth is constant instead of random.
 
 Watering increases field's HP by **3 points**
 and changes terrain type to `wheat_field_watered`.
+
+### Watering in Buttercup's fork of v2
+
+Works almost the same as in Miko's fork, but growth formula is different:
+`growth := floor((tile's HP + 1) / 3)`
 
 ### Watering in v3
 

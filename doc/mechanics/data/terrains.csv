@@ -1,20 +1,22 @@
 "id","key","ap","altitude","class","search","build_tiny","build_small","build_large","actions","ap_recovery","xp","transition","transition_odds","dig","restore_odds"
-1,"grassland",1,0,"open","onion => 12, thyme => 12, wheat => 5","true","true","true","dig",,,,,"onion => 30",
+1,"grassland",1,0,"open","onion => 3, thyme => 18, wheat => 6","true","true","true","dig",,,,,"onion => 25",
 2,"forest","forest_walk => 1, default => 2",0,"forest","stick => 25, staff => 8, bark => 10, chestnut => 15","true","true",,"chop_tree",,0.2,"thick_forest","default => 0, Spring => 15, Summer => 30",,
 21,"pine_forest_1",1,0,"forest","stick => 25, staff => 8","true","true",,"chop_tree",,0.1,"pine_forest_2","default => 0, Spring => 25, Summer => 40",,
 22,"pine_forest_2","forest_walk => 1, default => 2",0,"forest","stick => 25, staff => 8","true","true",,"chop_tree",,0.2,"pine_forest_3","default => 0, Spring => 25, Summer => 40",,
 23,"pine_forest_3","forest_walk => 2, default => 3",0,"forest","stick => 25, staff => 8","true","true",,"chop_tree",,0.3,,,,
-24,"cleared_pine",1,0,"open","onion => 1, thyme => 12, wheat => 5","true","'true","true","dig",,,"pine_forest_1","default => 0, Spring => 10","onion => 30",
+24,"cleared_pine",1,0,"open","onion => 3, thyme => 18, wheat => 6","true","'true","true","dig",,,"pine_forest_1","default => 0, Spring => 10","onion => 25",
 3,"wilderness",2,0,,,,,,,,,,,,
-4,"cleared_wood",1,0,"open","onion => 1, thyme => 12, wheat => 5","true","true","true","dig",,,"woodland","default => 0, Spring => 10","onion => 30",
+4,"cleared_wood",1,0,"open","onion => 3, thyme => 18, wheat => 6","true","true","true","dig",,,"woodland","default => 0, Spring => 10","onion => 25",
 31,"low_hillside",1,1,"hill","flint => 10, stone => 10",,,,,,0.2,,,,
 41,"low_hilltop",1,1,"hill","flint => 10, stone => 10","true","true",,,,0.2,,,,
 32,"mid_hillside",1,2,"hill","flint => 20, stone => 10",,,,,,0.3,,,,
 42,"mid_hilltop",1,2,"hill","flint => 20, stone => 10","true","true",,,,0.3,,,,
 33,"high_hillside",1,3,"hill","flint => 25, stone => 10",,,,,,0.4,,,,
 43,"high_hilltop",1,3,"hill","flint => 25, stone => 10","true","true",,,,0.4,,,,
-44,"wall",1,0.5,"wall",,"true",,,,,,,,,0
-45,"wall_low",1,0.25,"wall",,,,,,,,,,,0
+44,"wall",1,0,"wall",,"true",,,,-1,,,,,0
+45,"wall_low",5,0,"wall",,,,,,,,,,,0
+46,"gate_open",1,0,"wall",,"true",,,,,,,,,0
+47,"gate",5,0,"wall",,"true",,,,-1,,,,,0
 5,"stream","swimming => 2, default => 4",0,"shallow_water",,,,,"fill",,,,,,
 51,"lake_shore",1,0,"beach","stone => 25","true","true",,,,,,,,
 52,"shallow_lake","swimming => 2, default => 4",0,"shallow_water",,,,,"fill",,,,,,
