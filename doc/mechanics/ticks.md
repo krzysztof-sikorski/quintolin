@@ -141,7 +141,7 @@ For each **wheat_field** tile, set **HP := min(HP * 4, 200)**
 If field is watered, then set **HP := HP + 9**.
 If field is not watered, then set **HP := HP + 3**.
 
-Also set **overuse := overuse - 0.5**
+Also set **overuse := overuse - 0.5** and **watered := false**.
 
 ## Deactivate users
 
