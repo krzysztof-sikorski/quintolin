@@ -1,6 +1,7 @@
 # Game mechanics
 
 - [Global settings](globals.md)
+- [Character actions](actions.md)
 - [Background ticks](ticks.md)
 - [Hunger](hunger.md)
 - [Search](search.md)
