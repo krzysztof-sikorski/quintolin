@@ -36,3 +36,5 @@
 25,"triage","triage","herbalist","herb_lore"
 36,"unarmed1","basic Shin-Jitsu","warrior","null"
 37,"unarmed2","skilled Shin-Jitsu","warrior","unarmed1"
+38,"unarmed3","advanced Shin-Jitsu","warrior","unarmed2"
+39,"unarmed4","elite Shin-Jitsu","warrior","unarmed3"

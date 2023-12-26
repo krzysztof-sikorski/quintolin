@@ -10,7 +10,7 @@
 9,"Border_River","Border River","goose => 1"
 10,"Eastern_Marshes","Strongholm Marshes","goose => 1.5, croc => 0.6"
 11,"Islands","Scavenger Isles","goose => 2, pheasant => 1"
-12,"Latis_Plains","Latis Plains","buffalo => 1.4, sabre_tooth => 0.2"
+12,"Latis_Plains","Latis Plains","buffalo => 1.4, sabre_tooth => 0.2, mammoth => 0.1"
 13,"River_Dea","River Dea","goose => 0.6, croc => 0.2"
 14,"Sacred_Hill","Sacred Hill",
 15,"Dark_Forest","The Dark Forest","boar => 2, wolf => 0.5, bear => 0.2, squirrel => 0.2"
@@ -27,3 +27,4 @@
 26,"New_7","Terra Nullis Qi",
 27,"New_8","Terra Nullis Ba",
 28,"New_9","Terra Nullis Jiu",
+29,"Unknown_Ruins","Unknown Ruins",

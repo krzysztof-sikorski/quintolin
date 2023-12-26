@@ -18,6 +18,7 @@ Description of columns below.
 | Autumn          | string                       | description in Autumn                                                                          |
 | Winter          | string                       | description in Winter                                                                          |
 | search          | optional(map(reference,int)) | search table (item=>percentage)                                                                |
+| build_tiny      | bool                         | if allows buildings of size "tiny"                                                             |
 | build_small     | bool                         | if allows buildings of size "small"                                                            |
 | build_large     | bool                         | if allows buildings of size "large"                                                            |
 | actions         | list(reference)              | actions enabled on this terrain                                                                |
@@ -26,8 +27,15 @@ Description of columns below.
 | transition      | reference                    | terrain type that can replace current one                                                      |
 | transition_odds | map(reference,int)           | chances per season that terrain type changes                                                   |
 | dig             | map(reference,int)           | loot chances (as percentages?) for digging                                                     |
-| restore_odds    | int                          | percentage chance that tile will restore its depletion(defaults to 10%)                        |
+| restore_odds    | int                          | percentage chance that tile will restore its depletion (defaults to 10%)                       |
 
-**NOTE**: search tables for `wilderness` and `sand_beach` contain a few easter
-egg entries, but game engine skips unknown items so the final result is nothing
-found.
+## Notes
+
+- The CSV file contains values from Buttercup's fork,
+  as it was the latest "official" version.
+- Search tables for `wilderness` and `sand_beach` contain a few easter egg
+  entries, but game engine skips unknown items so the final result is nothing
+  found.
+- Property `build_tiny` was added in Miko's fork
+- Terrains added in Miko's fork: **cleared_pine**, **wall**, **wall_low**,
+  **track_forest**, **track_pine**, **wheat_field_watered**, **ruins**

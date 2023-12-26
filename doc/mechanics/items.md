@@ -31,3 +31,10 @@ Description of columns below.
 | craft_skill    | optional(reference)          | skill required for crafting                                                               |
 | plantable      | optional(bool)               | can be planted?                                                                           |
 | extra_products | map(reference,int)           | additional items created along with the main batch                                        |
+
+## Notes
+
+- The CSV file contains value from Buttercup's fork,
+  as it was the latest "official" version.
+- Items added in Miko's fork: **tusk**, **ivory_spear**, **ivory_axe**,
+  **ivory_pick**, **huckleberry**, **hberry_pie**

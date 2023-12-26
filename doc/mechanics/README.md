@@ -5,6 +5,7 @@
 - [Background ticks](ticks.md)
 - [Hunger](hunger.md)
 - [Search](search.md)
+- [Differences between versions](version_differences.md)
 
 ## Configuration
 

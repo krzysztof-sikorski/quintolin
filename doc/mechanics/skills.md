@@ -13,3 +13,11 @@ Description of columns below.
 | type   | reference | type/category of skill             |
 | desc   | string    | long description                   |
 | prereq | reference | skill required to learn this skill |
+
+## Notes
+
+- The CSV file contains values from Buttercup's fork,
+  as it was the latest "official" version.
+- The skill **javelin** was present in original v2
+  but later deleted in Miko's fork
+- Skills added in Miko's fork: **unarmed3**, **unarmed4**

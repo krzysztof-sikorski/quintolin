@@ -33,5 +33,13 @@ Description of columns below.
 | effect_bonus     | map(reference,float) | multipliers for effects of specific actions done inside      |
 | craft_ap_bonus   | map(reference,float) | multipliers for AP costs of specific actions done inside     |
 
-**Note:** building size for **bakery** is not an error but an unfixed bug.
-Actual effect in game was that building ignored all terrain restrictions.
+## Notes
+
+- The CSV file contains values from Buttercup's fork,
+  as it was the latest "official" version.
+- Building size for **bakery** is not an error but an unfixed bug.
+  Actual effect in game was that building ignored all terrain restrictions.
+- Building size "tiny" was added in Miko's fork,
+  previously these buildings had **size=small**.
+- Buildings added in Miko's fork (not present in original v2):
+  **fertility_shrine**, **wall**, **guardstand1**, **guardstand2**, **ruin**

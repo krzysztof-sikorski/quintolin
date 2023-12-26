@@ -15,17 +15,16 @@ This action gives **1 wanderer XP**.
 Attack animal, building, or another character.
 
 Attacking a character or animal costs **1 AP**.
-Attacking a building costs **5 AP**.
+Attacking a building costs **5 AP** and requires using a slashing weapon
+(stone axe etc) or a special admin-only weapon.
 
 Chance to hit and damage dealt depend on character skills and used weapon.
 
-*In v2* buildings are extremely resistant to damage, every hit has **1/3**
-chance that damage will be completely blocked and **2/3** chance that damage
-will be reduced to **1 HP**.
+*In v2* buildings are extremely resistant to damage, weapon type is ignored
+when calculating damage, instead there is an **1/3** chance to deal **2 HP**
+of damage and a **2/3** chance to deal **1 HP** of damage.
 
-*In v3* only a few weapons (**stone axe**, **ivory axe**, and admin weapons)
-can be used to attack buildings, but actual damage is the same as when attacking
-people or animals.
+*In v3* weapons deal the same damage to buildings as to characters or animals.
 
 Successful hit gives variable amount of **warrior XP**.
 Killing blow to a character/animal and final blow to a building give
@@ -118,9 +117,7 @@ This action is similar to search, in that it has a chance to give a random item
 from terrain type's dig table. The main difference is that digging requires
 a tool (*in v2*: digging stick, *in v3*: spade).
 
-*In v2* digging costs **1 AP**.
-*In v3* digging costs **2 AP**.
-
+Digging costs **2 AP** (no matter its result).
 Successful digging gives **1 wanderer XP**.
 
 Also, *in v3* digging depletes current tile by increasing search counter
@@ -237,6 +234,14 @@ Game versions also differ whether movement grants XP:
 
 - *in v2* some terrain types grant a small amount of **wanderer XP** on move
 - *in v3* movement never grants XP
+
+## Ocarina
+
+This is a special variant of "use" action, created in Miko's fork of v2
+and available only on `ocarina` item.
+
+Using an ocarina sends a system message ("X played an ocarina")
+to its user and all nearby characters.
 
 ## Quarry
 
@@ -355,7 +360,7 @@ The action costs **1 AP** and changes **water_pot** into **pot**.
 
 Result of watering depends on game version.
 
-### Watering in v2
+### Watering in original v2
 
 Calculate field growth:
 
@@ -367,6 +372,13 @@ If growth is greater than zero, then increase building's HP by growth value.
 Otherwise damage tile by **1 HP** and display message about damaging the crops.
 
 In both cases the action gives **1 herbalist XP**.
+
+## Watering in v2 since Miko's fork
+
+Watering cannot damage the field and growth is constant instead of random.
+
+Watering increases field's HP by **3 points**
+and changes terrain type to `wheat_field_watered`.
 
 ### Watering in v3
 

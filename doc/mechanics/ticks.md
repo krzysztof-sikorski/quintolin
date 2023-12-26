@@ -28,6 +28,7 @@ Ticks were grouped in sets, differing by their frequency:
 | Reset daily IP limits       | Daily in v2, Never in v3     |
 | Spawn animals               | Daily                        |
 | Terrain transitions         | Daily                        |
+| Delete rotten food          | Daily in v2, Never in v3     |
 | Rot food                    | Daily                        |
 | Storm damage                | Daily                        |
 
@@ -118,8 +119,11 @@ For each eligible character:
 - If **hunger > 0** then set **hunger := hunger - 1**
 - If the character has any food, then "eat" a random food (send a system message
   and remove the item from inventory) and skip the following steps
-- *Only in v2:* set **HP := max(HP - 3, 0)** and **Max_HP := max(Max_HP -2, 25)
-  **
+- *Only in v2:* set **HP := max(HP - 3, 0)**
+  and **Max_HP := max(Max_HP -2, 25)**
+
+*In v2, since Miko's fork:* if character has `level < 2` and has a `noobcake`
+in their inventory, then it is eaten first, before other food.
 
 ## Update settlement leader
 
@@ -133,7 +137,8 @@ Inactive characters are not counted as supporters.
 
 If **season is not Summer** then do nothing.
 
-For each **wheat_field** tile, set **HP := min(HP * 4, 200)**
+For each **wheat_field** and **wheat_field_watered** tile,
+set **HP := min(HP * 6, 200)**
 (HP directly translates to yield from harvest action).
 
 ## Grow fields (v3)
@@ -195,6 +200,13 @@ Overall the transitions revert results of tile depletion.
 *In v2* a forgotten wheat field will transform into empty field and then grass.
 *In v2* a field is implemented as a building and not as a separate terrain type.
 
+## Delete rotten food
+
+This operation was added in Miko's fork.
+
+The game mass-deletes all rotten food that "thrown on the ground",
+defined as not in character inventories and not in stockpiles.
+
 ## Rot food
 
 Every food item has the same **4%** chance to rot on daily tick.
@@ -217,6 +229,5 @@ If it was damaged, then the damage is a number **between 1 and 9**.
 
 Some buildings are less affected by storms:
 
-- **Totem Pole** is completely immune to storms
-- *In v3:* **Ruins** are also completely immune to storms
+- **Totem Pole** and **Ruins** are completely immune to storms
 - *In v3:* damage to **Gate**, **Guardstand**, and **Wall** is reduced by **3**
