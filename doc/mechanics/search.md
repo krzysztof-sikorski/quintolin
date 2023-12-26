@@ -1,5 +1,9 @@
 # Search
 
+Searching costs **1 AP**.
+
+Searching gives **1 wanderer XP** but only if an item was found.
+
 ## Searching algorithm
 
 - Get "loot table" from tile's terrain type
