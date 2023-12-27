@@ -21,12 +21,13 @@ The first open source version, also written by Isaac Lewis. Used Ruby and MySQL.
 - [Fork by Juraz](v2-fork-JohnJuraz) (exact copy of Buttercup's fork)
 - [Fork by wjherron](v2-fork-wjherron) (exact copy of Buttercup's fork)
 - [Fork by PeteKeller](v2-fork-PeteKeller)
-  (based on Buttercup's fork, rebranded as "Iceege", various changes)
+  (based on Buttercup's fork, no changes except renaming the game to "Iceage")
 - [Fork by anthoroe](v2-fork-anthoroe)
-  (based on Buttercup's fork, rebranded as "Light Rising",
+  (based on Buttercup's fork, a science fiction game named "Light Rising",
+  based on Shintolin engine but with completely customized game data/content,
   "thousands of changes to the code over five years")
 - [Fork by Ben Sharpe](v2-fork-bsharpe)
-  (based on Buttercup's fork, "cleaup project for the exercise")
+  (based on Buttercup's fork, "cleanup project for the exercise")
 
 ## Version 3
 
