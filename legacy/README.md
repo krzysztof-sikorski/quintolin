@@ -37,7 +37,7 @@ The third version, re-implemented for a different infrastructure by Troy Goode
 - [Original implementation](v3-original)
 - [fork by nlndz](v3-fork-nlndz) (outdated copy of original)
 - [Fork by Victor Ling (a.k.a. Ionshard)](v3-fork-Ionshard)
-  (based on original,a few bug fixes)
+  (based on original, a few bug fixes)
 - [Fork by pillbox](v3-fork-tmpillbox)
   (based on original, updates developer config and instructions)
 - [Fork by Juraz](v3-fork-JohnJuraz)
