@@ -45,4 +45,5 @@ This project is published to multiple core-sharing portals:
 - [doc](doc/README.md): developer documentation
 - [legacy](legacy/README.md): History and source code of previous versions of
   the game
+- `tools`: developer tools
 - [website](website/README.md): website and UI
