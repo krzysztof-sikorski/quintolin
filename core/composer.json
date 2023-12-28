@@ -1,7 +1,7 @@
 {
   "name": "quintolin/core",
   "description": "Core engine for Quintolin PBBG",
-  "version": "0.0.1-dev",
+  "version": "0.0.1",
   "type": "library",
   "keywords": [
     "game",

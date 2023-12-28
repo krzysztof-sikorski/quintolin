@@ -1,7 +1,7 @@
 {
   "name": "quintolin/website",
   "description": "Website and UI for Quintolin PBBG",
-  "version": "0.0.1-dev",
+  "version": "0.0.1",
   "type": "project",
   "keywords": [
     "game",
