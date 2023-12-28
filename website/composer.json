@@ -24,6 +24,7 @@
     "php": "^8.3",
     "ext-ctype": "*",
     "ext-iconv": "*",
+    "quintolin/core": "^0.0.1",
     "symfony/console": "7.0.*",
     "symfony/dotenv": "7.0.*",
     "symfony/flex": "^2",

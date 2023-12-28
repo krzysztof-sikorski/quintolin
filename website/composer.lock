@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4ab4525a48437fe29b0b55fbf41e688",
+    "content-hash": "534d6efa110af22a5d14754cb625a070",
     "packages": [
         {
             "name": "psr/cache",
@@ -207,6 +207,46 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "quintolin/core",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../core",
+                "reference": "71ff64c8723e825a1437cadc00f1229e262a1490"
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Quintolin\\Core\\": "src/"
+                }
+            },
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Sikorski",
+                    "homepage": "https://zerozero.pl/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Core engine for Quintolin PBBG",
+            "homepage": "https://www.shintolin.com/",
+            "keywords": [
+                "game",
+                "pbbg"
+            ],
+            "support": {
+                "chat": "https://discord.gg/ZKTSKne"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "symfony/cache",
