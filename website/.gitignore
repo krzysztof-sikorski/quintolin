@@ -1,7 +1,9 @@
 /.env.local
 /.env.local.php
 /.env.*.local
+/assets/vendor
 /config/secrets/prod/prod.decrypt.private.php
+/public/assets/
 /public/bundles/
 /var/
 /vendor/
