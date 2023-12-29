@@ -20,4 +20,7 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
+    'es-module-shims' => [
+        'version' => '1.8.2',
+    ],
 ];
