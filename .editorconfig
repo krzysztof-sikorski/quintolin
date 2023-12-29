@@ -14,6 +14,18 @@ max_line_length = 80
 indent_size = 4
 max_line_length = 120
 
-[/website/{bin/console, config/**/*.yaml}]
+[/website/bin/console]
+indent_size = 4
+max_line_length = 120
+
+[/website/config/*.yaml]
+indent_size = 4
+max_line_length = 120
+
+[/website/config/routes/*.yaml]
+indent_size = 4
+max_line_length = 120
+
+[/website/config/packages/*.yaml]
 indent_size = 4
 max_line_length = 120
