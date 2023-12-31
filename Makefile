@@ -12,6 +12,18 @@ git_push_all:
 	git remote | xargs -L1 git push --verbose --all
 	git remote | xargs -L1 git push --verbose --tags
 
+.PHONY: install_assets
+install_assets:
+	php website/bin/console -vvv importmap:install
+
+.PHONY: compile_assets
+compile_assets:
+	php website/bin/console -vvv asset-map:compile
+
+.PHONY: clean_assets
+clean_assets:
+	rm --force --recursive --verbose website/public/assets/*
+
 .PHONY: clean_cache
 clean_cache:
 	rm --force --verbose .php-cs-fixer.cache
