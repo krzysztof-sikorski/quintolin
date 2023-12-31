@@ -44,3 +44,7 @@ lint_coding_style: install_php_cs_fixer
 .PHONY: fix_coding_style
 fix_coding_style: install_php_cs_fixer
 	tools/php-cs-fixer/vendor/bin/php-cs-fixer fix -vvv
+
+.PHONY: lint_twig_templates
+lint_twig_templates:
+	website/bin/console lint:twig -vvv --show-deprecations
