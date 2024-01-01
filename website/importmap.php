@@ -33,4 +33,11 @@ return [
         'version' => '5.3.2',
         'type' => 'css',
     ],
+    '@fontsource/freckle-face' => [
+        'version' => '5.0.18',
+    ],
+    '@fontsource/freckle-face/index.min.css' => [
+        'version' => '5.0.18',
+        'type' => 'css',
+    ],
 ];
