@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 #[AsController]
 #[Route('/', name: 'app_home', methods: [Request::METHOD_GET])]
-#[Template(template: 'home/index.html.twig')]
+#[Template(template: 'website/home.html.twig')]
 final readonly class HomeController
 {
     public function __invoke(): array
