@@ -9,6 +9,12 @@ indent_style = space
 indent_size = 2
 max_line_length = 80
 
+[*.css]
+max_line_length = 120
+
+[{*.html,*.html.twig}]
+max_line_length = 120
+
 [*.json]
 max_line_length = off
 
