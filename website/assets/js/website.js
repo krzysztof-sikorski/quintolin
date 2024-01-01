@@ -2,5 +2,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 
-// import application styles
-import './styles/app.css'
+// import website stylesheet
+import '../css/website.css'
