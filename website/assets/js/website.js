@@ -1,4 +1,5 @@
-// import Bootstrap framework
+// import libraries
+import '@popperjs/core'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap'
 
