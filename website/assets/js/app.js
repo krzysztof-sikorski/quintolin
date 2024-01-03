@@ -5,4 +5,4 @@ import 'bootstrap'
 import '@fontsource/freckle-face/index.min.css'
 
 // import website stylesheet
-import '../css/website.css'
+import '../css/app.css'

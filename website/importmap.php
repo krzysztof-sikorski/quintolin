@@ -17,7 +17,7 @@ declare(strict_types=1);
  */
 return [
     'website' => [
-        'path' => './assets/js/website.js',
+        'path' => './assets/js/app.js',
         'entrypoint' => true,
     ],
     'es-module-shims' => [
