@@ -3,7 +3,7 @@
   font-family: 'Freckle Face';
   font-style: normal;
   font-weight: 400;
-  src: local('Freckle Face'), local('FreckleFace-Regular'), url("/web/20210512022931im_/https://www.shintolin.com/fonts/freckle-face-v4-latin/freckle-face-v4-latin-regular.woff") format('woff');
+  src: local('Freckle Face'), local('FreckleFace-Regular'), url("freckle-face-v4-latin-regular.woff") format('woff');
 }
 body {
   cursor: default;
