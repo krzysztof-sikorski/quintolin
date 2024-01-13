@@ -1,0 +1,68 @@
+/* freckle-face-regular - latin */
+@font-face {
+  font-family: 'Freckle Face';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Freckle Face'), local('FreckleFace-Regular'), url("/web/20210512022931im_/https://www.shintolin.com/fonts/freckle-face-v4-latin/freckle-face-v4-latin-regular.woff") format('woff');
+}
+body {
+  cursor: default;
+  background-color: #f7f6e4;
+}
+dl {
+  margin: 0;
+  width: 100%;
+}
+dl dt,
+dl dd {
+  float: left;
+}
+dl dt {
+  width: 66%;
+  clear: left;
+  text-align: right;
+}
+dl dd {
+  width: 34%;
+  padding-left: 8px;
+  overflow: hidden;
+}
+.jumbotron {
+  background-color: #5f3711;
+  color: #f8f7e8;
+}
+.well {
+  background-color: #5f3711;
+  background-image: linear-gradient(to bottom, #5a3410, #704114 100%);
+  border-color: #341e09;
+  color: #f8f7e8;
+}
+.nav.nav-pills li.active a {
+  background-color: #5f3711;
+  color: #f8f7e8;
+}
+form.inline-block {
+  display: inline-block;
+  margin: 0;
+}
+
+/*
+     FILE ARCHIVED ON 02:29:31 May 12, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:08:52 Jan 13, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 92.34
+  exclusion.robots: 0.119
+  exclusion.robots.policy: 0.106
+  cdx.remote: 0.087
+  esindex: 0.011
+  LoadShardBlock: 58.201 (3)
+  PetaboxLoader3.datanode: 73.715 (4)
+  load_resource: 57.067
+  PetaboxLoader3.resolve: 37.426
+*/

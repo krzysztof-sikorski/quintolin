@@ -1,0 +1,166 @@
+body#home > .jumbotron .logo {
+  margin-right: 2em;
+}
+body#home > .jumbotron .logo img {
+  border: 3px solid #341e09;
+  border-radius: 70px;
+  box-shadow: 5px 5px 10px #341e09;
+  height: 150px;
+}
+body#home > .jumbotron h1 {
+  font: 6.8em 'Freckle Face', cursive;
+  margin: 0;
+}
+body#home > .jumbotron p.tagline {
+  font: 1.75em 'Freckle Face', cursive;
+}
+body#home > .jumbotron .login-button a {
+  margin: 5px 2px;
+}
+body#home > .jumbotron .login-button a:first-child {
+  margin-left: 0;
+}
+body#home > .jumbotron .login-button a:last-child {
+  margin-right: 0;
+}
+.marketing strong {
+  text-transform: uppercase;
+}
+.marketing .screenshots ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.marketing .screenshots ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+}
+.well.register {
+  border-radius: 4px;
+}
+.well.register h2 {
+  font: 2em 'Freckle Face', cursive;
+  margin: 0;
+}
+.well.register a {
+  color: #f8f7e8;
+  text-decoration: underline;
+}
+.well.register .recaptcha {
+  width: 304px;
+  margin: 20px auto;
+}
+.stats {
+  text-align: right;
+}
+.stats > div {
+  display: inline-block;
+  background-color: #f7f6e4;
+  border-radius: 4px;
+  color: #5f3711;
+  text-align: right;
+  padding: 0.5em 1em;
+}
+.stats > div table {
+  margin: 0;
+}
+.stats > div table tr {
+  margin: 0;
+}
+.stats > div table tr td {
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+.stats > div table tr td:first-child {
+  text-align: right;
+  padding-right: 8px;
+}
+.stats > div table tr td:first-child a {
+  color: #5f3711;
+}
+.stats > div table tr td:last-child {
+  text-align: left;
+  width: 60px;
+}
+.stats > div table tr td:last-child a {
+  display: block;
+  width: 60px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.release-notes h2 > span {
+  font: 1.4em 'Freckle Face', cursive;
+}
+.release-notes h3 > a {
+  font: 1em 'Freckle Face', cursive;
+  color: #f8f7e8;
+}
+.release-notes .note {
+  background-color: #f7f6e4;
+  border-radius: 4px;
+  padding: 16px;
+  color: #5f3711;
+  margin: 0 0 16px 0;
+}
+.release-notes .note ul {
+  padding-left: 15px;
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.server-time {
+  font-size: 12px;
+  font-family: monospace;
+  margin-bottom: 1.5em;
+}
+.server-time label {
+  margin-right: 8px;
+}
+body#login .well.login {
+  margin-top: 15px;
+  width: 350px;
+  border-radius: 15px;
+}
+body#login .well.login h2 {
+  font: 2em 'Freckle Face', cursive;
+  margin: 0;
+}
+body#login .well.login a {
+  color: #f8f7e8;
+  text-decoration: underline;
+}
+.rc-anchor-alert {
+  font-family: sans-serif;
+}
+body#reset-password .well.reset-password {
+  text-align: center;
+  margin-top: 15px;
+  width: 350px;
+  border-radius: 15px;
+}
+body#reset-password .well.reset-password p {
+  font: 2em 'Freckle Face', cursive;
+  margin: 0;
+}
+
+/*
+     FILE ARCHIVED ON 02:29:31 May 12, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:08:52 Jan 13, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 74.204
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.061
+  cdx.remote: 0.056
+  esindex: 0.01
+  LoadShardBlock: 44.394 (3)
+  PetaboxLoader3.datanode: 45.202 (4)
+  load_resource: 27.279
+  PetaboxLoader3.resolve: 23.982
+*/
