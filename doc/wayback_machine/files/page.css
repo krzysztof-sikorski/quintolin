@@ -1,0 +1,351 @@
+nav.navbar-inverse {
+  background-image: linear-gradient(to bottom, #5a3410, #704114 100%);
+}
+nav.navbar-inverse .navbar-brand {
+  font: 1.75em 'Freckle Face', cursive;
+  padding-top: 10px;
+  color: #f8f7e8;
+}
+nav.navbar-inverse .navbar-nav li a {
+  color: #f8f7e8;
+}
+nav.navbar-inverse .navbar-nav .dropdown-menu {
+  background-color: #5f3711;
+}
+nav.navbar-inverse .navbar-nav .dropdown-menu li a {
+  color: #f8f7e8;
+}
+@media (max-width: 767px) {
+  nav.navbar-inverse .navbar-nav .dropdown-menu li a {
+    color: #f8f7e8 !important;
+  }
+}
+nav.navbar-inverse .navbar-nav .dropdown-menu li:hover {
+  background-color: #f7f6e4;
+  color: #5f3711;
+}
+nav.navbar-inverse .navbar-nav .dropdown-menu li:hover a {
+  color: #5f3711;
+}
+@media (max-width: 767px) {
+  nav.navbar-inverse .navbar-nav .dropdown-menu li:hover {
+    background-color: #f7f6e4 !important;
+  }
+  nav.navbar-inverse .navbar-nav .dropdown-menu li:hover a {
+    color: #5f3711 !important;
+  }
+}
+nav.navbar-inverse .navbar-nav .dropdown-menu li.dropdown-header,
+nav.navbar-inverse .navbar-nav .dropdown-menu li.dropdown-header:hover {
+  background-color: #5f3711;
+  color: #f8f7e8;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 10px;
+}
+@media (max-width: 767px) {
+  nav.navbar-inverse .navbar-nav .dropdown-menu li.dropdown-header,
+  nav.navbar-inverse .navbar-nav .dropdown-menu li.dropdown-header:hover {
+    background-color: #5f3711 !important;
+    color: #f8f7e8 !important;
+    text-transform: uppercase !important;
+    text-decoration: underline !important;
+    font-size: 10px !important;
+  }
+}
+.chat-nav {
+  margin-bottom: 1.5em;
+}
+.chat .chat-entry input[type=text] {
+  display: inline-block;
+}
+.chat .chat-entry .legend label {
+  margin-right: 0.5em;
+}
+.chat.chat-history .jumbotron {
+  padding: 1em 0;
+}
+.chat.chat-history .jumbotron input[type=text] {
+  width: 20em;
+}
+@media (min-width: 768px) {
+  .chat.chat-history .jumbotron input[type=text] {
+    width: 45em;
+  }
+}
+@media (min-width: 992px) {
+  .chat.chat-history .jumbotron input[type=text] {
+    width: 62em;
+  }
+}
+@media (min-width: 1200px) {
+  .chat.chat-history .jumbotron input[type=text] {
+    width: 70em;
+  }
+}
+.chat.chat-history .jumbotron button {
+  color: #f8f7e8;
+}
+.chat .messages {
+  background-color: #fff;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.chat .messages .message {
+  margin-bottom: 0.5em;
+}
+.chat .messages .message > div {
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+.chat .messages .message .action span.target {
+  color: #000;
+  border-bottom: 1px dotted #000;
+  text-transform: lowercase;
+}
+.chat .messages .message .action span.damage,
+.chat .messages .message .action span.knockout {
+  color: #f00;
+  font-weight: bold;
+}
+.chat .messages .message .action span.heal,
+.chat .messages .message .action span.revive {
+  color: #1bc05a;
+  font-weight: bold;
+}
+.chat .messages .message .action span.missed {
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+}
+.chat .messages .message .announcement {
+  background-color: #5f3711;
+  color: #f8f7e8;
+}
+.chat .messages .message .announcement a {
+  color: #f8f7e8;
+  text-decoration: underline;
+}
+.chat .messages .message .announcement hr {
+  margin: 0.5em 0;
+}
+.chat .messages .message .social {
+  background-color: #f7f6e4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chat .messages .message .social-shout {
+  font-weight: bold;
+}
+.chat .messages .message .social-whisper,
+.chat .messages .message .social-emote {
+  font-style: italic;
+}
+.chat .messages .message .social-ooc .label {
+  position: relative;
+  top: -1px;
+}
+.chat .messages .message .time {
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+}
+.game .chat {
+  background-color: #fff;
+  border-radius: 0.5em;
+}
+.game .chat form {
+  padding: 1em 1em 0 1em;
+  margin-bottom: 0;
+}
+.game .chat form .form-group {
+  margin-bottom: 6px;
+}
+.game .chat form .form-group input[type=text] {
+  width: 19.5em;
+}
+@media (min-width: 768px) {
+  .game .chat form .form-group input[type=text] {
+    width: 19.5em;
+  }
+}
+@media (min-width: 992px) {
+  .game .chat form .form-group input[type=text] {
+    width: 27em;
+  }
+}
+@media (min-width: 1200px) {
+  .game .chat form .form-group input[type=text] {
+    width: 34em;
+  }
+}
+.game .chat .messages {
+  margin-bottom: 0;
+}
+body {
+  padding-top: 51px;
+  margin-bottom: 2em;
+}
+.jumbotron {
+  padding: 1em 0 2em 0;
+  text-align: center;
+}
+.jumbotron h1 {
+  font: 4em 'Freckle Face', cursive;
+  margin: 0;
+}
+.jumbotron h2 {
+  font-size: 15px;
+  margin: 0;
+}
+.jumbotron h2 a {
+  color: #f8f7e8;
+}
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+table thead th {
+  background-color: #000;
+  color: #fff;
+}
+table td,
+table th {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #000;
+}
+h2.page-title {
+  font: 2em 'Freckle Face', cursive;
+  margin-top: 0;
+}
+.tab-content {
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 1em;
+}
+.tab-content.profile-read-only {
+  border-top: 1px solid #ddd;
+  border-radius: 1em;
+}
+form {
+  margin-bottom: 1.5em;
+}
+form textarea.form-control {
+  height: 9em;
+}
+.rankings-nav-xs {
+  height: 55px;
+}
+.rankings-nav-xs button {
+  width: 100%;
+}
+.rankings {
+  border-color: #333;
+}
+.rankings thead th,
+.rankings tfoot th,
+.rankings thead td,
+.rankings tfoot td {
+  border-color: #333;
+  background-color: #333;
+  color: #f8f7e8;
+  font-weight: bold;
+}
+.rankings td {
+  border-color: #333;
+}
+.rankings td .label {
+  position: relative;
+  top: -2px;
+  margin-left: 2px;
+}
+.profile-avatar {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 1em;
+}
+.profile-avatar img {
+  max-width: 300px;
+  box-shadow: 5px 5px 10px #341e09;
+}
+.profile-bio {
+  background-color: #f7f6e4;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  font-size: 1.3em;
+}
+.profile-bio.empty {
+  color: #b7b036;
+}
+.profile-bio p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.profile-settlement,
+.profile-badges {
+  margin-bottom: 1em;
+}
+.profile-settlement .label,
+.profile-badges .label {
+  position: relative;
+  top: -2px;
+}
+.profile-badges .label {
+  margin-right: 0.5em;
+}
+.profile-badges .label:last-child {
+  margin-right: 0;
+}
+.settlement-members {
+  list-style: none;
+  border: 2px solid #f7f6e4;
+}
+.settlement-members,
+.settlement-members li {
+  margin: 0;
+  padding: 0;
+}
+.settlement-members li {
+  padding: 0.5em;
+}
+.settlement-members li.alt {
+  background-color: #f7f6e4;
+}
+.settlement-members .badge,
+.settlement-members .label {
+  position: relative;
+  top: -2px;
+}
+.settlement-member {
+  display: inline-block;
+}
+.settlement-votes {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+/*
+     FILE ARCHIVED ON 18:25:12 May 31, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:07:02 Jan 13, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 82.92
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.085
+  cdx.remote: 0.085
+  esindex: 0.011
+  LoadShardBlock: 53.526 (3)
+  PetaboxLoader3.datanode: 167.275 (5)
+  load_resource: 1100.661 (2)
+  PetaboxLoader3.resolve: 108.145 (2)
+*/
