@@ -1,19 +1,157 @@
 <!DOCTYPE html>
-<html><head>
-<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Shintolin - Explore. Settle. Trade. Conquer.</title><link rel="stylesheet" type="text/css" href="files/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="files/bootstrap-theme.min.css"><link rel="stylesheet" type="text/css" href="files/default.css"><link rel="stylesheet" type="text/css" href="files/website.css"></head><body id="home">
- <div class="jumbotron"><div class="container"><div class="row"><div class="col-xs-9"><div class="logo pull-left hidden-xs"><img alt="Shintolin logo" src="files/cave_artthumb.png"></div><h1>Shintolin</h1><p class="tagline hidden-xs">Explore. Settle. Trade. Conquer.</p></div><div class="col-xs-3 hidden-xs hidden-sm"><div class="login-button text-right"><a class="btn btn-default" href="login.html">Login</a></div><div class="stats hidden-xs hidden-sm"><div><table><tbody><tr><td><label><a href="rankings-frags.html">Active Players</a></label></td><td><span>11</span></td></tr><tr><td><label><a href="rankings-bigtowns.html">Settlements</a></label></td><td><span>4</span></td></tr><tr><td><label>Map Size</label></td><td><span>10900</span></td></tr><tr><td><label><a href="rankings-younguns.html">Newest Player</a></label></td><td><a href="profile-arka.html">Arka</a></td></tr></tbody></table></div></div></div></div><div class="row hidden-md hidden-lg"><div class="col-xs-12"><div class="login-button text-center"><a class="btn btn-default" href="login.html">Login</a></div></div></div></div></div><div class="container"><div class="row"><div class="col-sm-7"><div class="marketing"><p><strong>Hunt, or farm. Fight, or heal. Build, or conquer. Join fellow players in a free, persistent browser-based world.</strong></p><p class="hidden-xs">Humanity
- has wandered the world of Shintolin for millenia, hunting and gathering
- to survive. But some grow tired of the nomadic life, and are beginning
-to settle down. Forests make way for farmland, villages grow into towns
-and cities, and civilisations seek wealth, power, and glory.</p><ul class="hidden-xs"><li>Work with other players to build a village, or try and survive the dangers of the wilderness</li><li>Find your fortune through farming, crafting, or trading</li><li>Explore a dynamic world, where every item, building and town is player-created</li><li>Shape the landscape, and write your own chapter in the history of Shintolin</li></ul><div class="screenshots text-center hidden-xs"><ul><li><a href="files/screenshot_full.png"><img src="files/screenshot_thumbnail.png"></a></li></ul></div></div></div><div class="col-sm-5"><div class="well register"><h2>Create Your Character</h2><p><a href="login.html">Already have a character? Log in here.</a></p><form method="POST" action="register.html"><input type="hidden" name="_csrf" value="z2jWOkjK-nAmEeUvuuw6VrLcewZieWYmf5OU"><div class="form-group"><label for="email">Email Address</label><input class="form-control" id="email" type="email" name="email" maxlength="255" autofocus=""></div><div class="form-group"><label for="password">Password</label><input class="form-control" id="password" type="password" name="password" maxlength="64"></div><div class="form-group"><label for="password_2">Re-enter Password</label><input class="form-control" id="password_2" type="password" name="password_2" maxlength="64"></div><div class="form-group"><label for="username">Character Name</label><input class="form-control" id="username" type="text" name="username" maxlength="16"></div><div class="recaptcha"><div class="g-recaptcha" data-sitekey="6LcIlyMTAAAAAOXFBG2OEnE7aK-t07KsHu9IBsKY"><div><iframe src="files/fallback.html" frameborder="0" scrolling="no" style="width: 302px; height: 422px;" data-ruffle-polyfilled=""></iframe><div style="margin: -4px 0px 0px; padding: 0px; background: rgb(249, 249, 249); border: 1px solid rgb(193, 193, 193); border-radius: 3px; height: 60px; width: 300px;"><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: block;"></textarea></div></div></div></div><div class="buttons text-center"><button class="btn btn-default" type="submit">Play Now!</button></div></form></div></div></div></div><div class="jumbotron"><div class="container"><div class="row"><div class="col-xs-12"><div class="release-notes"><h2><span>Recently Released!</span></h2><h3><a href="updates.html#1505174400000">September 12th, 2017</a></h3><div class="note"><ul>
-<li>Fixed a bug preventing characters from attacking buildings within their own settlement. Hat tip to Grixic and Juraz.</li>
-<li>Fixed bug preventing provisional settlement members from being kicked when dazed. Hat tip to Clary.</li>
-<li>Moved the “Kick to Outside” action to the Building tab.</li>
-<li>Added new action to allow settlement leader to kick any dazed player
- from their settlement. This action is only available at the totem pole.</li>
-</ul>
-</div><p class="text-center"><a class="btn btn-default" href="updates.html">Read Older Release Notes</a></p></div></div></div></div></div><div class="container"><div class="row"><div class="col-xs-12"><p class="server-time text-center"><label>Server Time:</label><span>2022-09-26 12:25:51 [12:25 PM]</span></p></div></div></div><script src="files/jquery-2.1.4.min.js"></script><script src="files/bootstrap.min.js"></script>
-</body></html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shintolin - Explore. Settle. Trade. Conquer.</title>
+  <link rel="stylesheet" type="text/css" href="files/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="files/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="files/default.css">
+  <link rel="stylesheet" type="text/css" href="files/website.css">
+</head>
+<body id="home">
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-9">
+        <div class="logo pull-left hidden-xs"><img alt="Shintolin logo" src="files/cave_artthumb.png"></div>
+        <h1>Shintolin</h1>
+        <p class="tagline hidden-xs">Explore. Settle. Trade. Conquer.</p></div>
+      <div class="col-xs-3 hidden-xs hidden-sm">
+        <div class="login-button text-right"><a class="btn btn-default" href="login.html">Login</a></div>
+        <div class="stats hidden-xs hidden-sm">
+          <div>
+            <table>
+              <tbody>
+              <tr>
+                <td><label><a href="rankings-frags.html">Active Players</a></label></td>
+                <td><span>11</span></td>
+              </tr>
+              <tr>
+                <td><label><a href="rankings-bigtowns.html">Settlements</a></label></td>
+                <td><span>4</span></td>
+              </tr>
+              <tr>
+                <td><label>Map Size</label></td>
+                <td><span>10900</span></td>
+              </tr>
+              <tr>
+                <td><label><a href="rankings-younguns.html">Newest Player</a></label></td>
+                <td><a href="profile-arka.html">Arka</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row hidden-md hidden-lg">
+      <div class="col-xs-12">
+        <div class="login-button text-center"><a class="btn btn-default" href="login.html">Login</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="marketing"><p><strong>Hunt, or farm. Fight, or heal. Build, or conquer. Join fellow players in a free,
+        persistent browser-based world.</strong></p>
+        <p class="hidden-xs">Humanity
+          has wandered the world of Shintolin for millenia, hunting and gathering
+          to survive. But some grow tired of the nomadic life, and are beginning
+          to settle down. Forests make way for farmland, villages grow into towns
+          and cities, and civilisations seek wealth, power, and glory.</p>
+        <ul class="hidden-xs">
+          <li>Work with other players to build a village, or try and survive the dangers of the wilderness</li>
+          <li>Find your fortune through farming, crafting, or trading</li>
+          <li>Explore a dynamic world, where every item, building and town is player-created</li>
+          <li>Shape the landscape, and write your own chapter in the history of Shintolin</li>
+        </ul>
+        <div class="screenshots text-center hidden-xs">
+          <ul>
+            <li><a href="files/screenshot_full.png"><img src="files/screenshot_thumbnail.png"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="well register"><h2>Create Your Character</h2>
+        <p><a href="login.html">Already have a character? Log in here.</a></p>
+        <form method="POST" action="register.html">
+          <input type="hidden" name="_csrf" value="z2jWOkjK-nAmEeUvuuw6VrLcewZieWYmf5OU">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input class="form-control" id="email" type="email" name="email" maxlength="255" autofocus="">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" id="password" type="password" name="password" maxlength="64">
+          </div>
+          <div class="form-group">
+            <label for="password_2">Re-enter Password</label>
+            <input class="form-control" id="password_2" type="password" name="password_2" maxlength="64">
+          </div>
+          <div class="form-group">
+            <label for="username">Character Name</label>
+            <input class="form-control" id="username" type="text" name="username" maxlength="16">
+          </div>
+          <div class="recaptcha">
+            <div class="g-recaptcha" data-sitekey="6LcIlyMTAAAAAOXFBG2OEnE7aK-t07KsHu9IBsKY">
+              <div>
+                <iframe src="files/fallback.html" frameborder="0" scrolling="no" style="width: 302px; height: 422px;"
+                        data-ruffle-polyfilled=""></iframe>
+                <div
+                  style="margin: -4px 0px 0px; padding: 0px; background: rgb(249, 249, 249); border: 1px solid rgb(193, 193, 193); border-radius: 3px; height: 60px; width: 300px;">
+                  <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: block;"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buttons text-center">
+            <button class="btn btn-default" type="submit">Play Now!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="release-notes"><h2><span>Recently Released!</span></h2>
+          <h3><a href="updates.html#1505174400000">September 12th, 2017</a></h3>
+          <div class="note">
+            <ul>
+              <li>Fixed a bug preventing characters from attacking buildings within their own settlement. Hat tip to
+                Grixic and Juraz.
+              </li>
+              <li>Fixed bug preventing provisional settlement members from being kicked when dazed. Hat tip to Clary.
+              </li>
+              <li>Moved the “Kick to Outside” action to the Building tab.</li>
+              <li>Added new action to allow settlement leader to kick any dazed player
+                from their settlement. This action is only available at the totem pole.
+              </li>
+            </ul>
+          </div>
+          <p class="text-center"><a class="btn btn-default" href="updates.html">Read Older Release Notes</a></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12"><p class="server-time text-center"><label>Server Time:</label><span>2022-09-26 12:25:51 [12:25 PM]</span>
+    </p></div>
+  </div>
+</div>
+<script src="files/jquery-2.1.4.min.js"></script>
+<script src="files/bootstrap.min.js"></script>
+</body>
+</html>
 <!--
      FILE ARCHIVED ON 12:25:51 Sep 26, 2022 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 22:46:18 Jan 13, 2024.
