@@ -37,7 +37,7 @@ clean_logs:
 install_php_cs_fixer:
 	composer --quiet --working-dir=tools/php-cs-fixer install
 
-.PHONY: check_coding_style
+.PHONY: lint_coding_style
 lint_coding_style: install_php_cs_fixer
 	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
 
