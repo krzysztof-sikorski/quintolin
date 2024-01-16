@@ -13,12 +13,23 @@ use function array_key_exists;
  */
 final class PageContext
 {
+    private null | string $bodyElementId = null;
     private array $path = [
         'root' => 'Shintolin',
         'page' => null,
         'item' => null,
     ];
     private null | string $assetsEntryPoint = null;
+
+    public function getBodyElementId(): null | string
+    {
+        return $this->bodyElementId;
+    }
+
+    public function setBodyElementId(null | string $bodyElementId): void
+    {
+        $this->bodyElementId = $bodyElementId;
+    }
 
     public function getPath(): array
     {
