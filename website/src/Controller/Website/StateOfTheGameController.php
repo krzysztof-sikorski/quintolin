@@ -7,7 +7,7 @@ namespace App\Controller\Website;
 use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Attribute\AsController;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
 #[Route('/sotg/2015-07-17', name: 'app_state_of_the_game', methods: [Request::METHOD_GET])]
