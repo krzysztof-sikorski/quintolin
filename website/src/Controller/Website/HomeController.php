@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route('/', name: 'app_home', methods: [Request::METHOD_GET])]
+#[Route(path: '/', name: 'app_home', methods: [Request::METHOD_GET])]
 #[Template(template: 'website/home.html.twig')]
 final readonly class HomeController
 {

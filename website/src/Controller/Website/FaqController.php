@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route('/faq', name: 'app_faq', methods: [Request::METHOD_GET])]
+#[Route(path: '/faq', name: 'app_faq', methods: [Request::METHOD_GET])]
 #[Template(template: 'website/faq.html.twig')]
 final readonly class FaqController
 {

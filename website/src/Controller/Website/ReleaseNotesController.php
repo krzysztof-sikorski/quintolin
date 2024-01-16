@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route('/updates', name: 'app_release_notes', methods: [Request::METHOD_GET])]
+#[Route(path: '/updates', name: 'app_release_notes', methods: [Request::METHOD_GET])]
 #[Template(template: 'website/release_notes.html.twig')]
 final readonly class ReleaseNotesController
 {

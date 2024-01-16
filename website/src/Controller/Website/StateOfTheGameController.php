@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route('/sotg/2015-07-17', name: 'app_state_of_the_game', methods: [Request::METHOD_GET])]
+#[Route(path: '/sotg/2015-07-17', name: 'app_state_of_the_game', methods: [Request::METHOD_GET])]
 #[Template(template: 'website/state_of_the_game.html.twig')]
 final readonly class StateOfTheGameController
 {
