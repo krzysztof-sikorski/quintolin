@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route(path: '/discord', name: 'app_discord', methods: [Request::METHOD_GET])]
+#[Route(path: '/discord', name: 'app_website_discord', methods: [Request::METHOD_GET])]
 #[Template(template: 'website/discord.html.twig')]
 final readonly class DiscordController
 {
