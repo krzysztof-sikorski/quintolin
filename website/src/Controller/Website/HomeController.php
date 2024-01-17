@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Controller\Website;
 
 use DateTimeImmutable;
-use Psr\Clock\ClockInterface;
 use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Attribute\AsController;
@@ -16,17 +15,10 @@ use Symfony\Component\Routing\Attribute\Route;
 #[Template(template: 'website/home.html.twig')]
 final readonly class HomeController
 {
-    public function __construct(
-        private ClockInterface $clock,
-    ) {}
-
     public function __invoke(): array
     {
         // TODO fetch real data
-        return [
-            ...$this->getSampleData(),
-            'currentTime' => $this->clock->now(),
-        ];
+        return $this->getSampleData();
     }
 
     /**
