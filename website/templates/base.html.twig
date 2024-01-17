@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>{% block title %}Welcome!{% endblock %}</title>
-  {% block stylesheets %}
-  {% endblock %}
-
-  {% block javascripts %}
-    {% block importmap %}{{ importmap('website') }}{% endblock %}
-  {% endblock %}
+  <link rel="stylesheet" href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('vendor/@fontsource/freckle-face/index.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  {%- block stylesheets -%}{%- endblock -%}
+  {{ importmap('website') }}
 </head>
 <body>
 {% block body %}{% endblock %}
