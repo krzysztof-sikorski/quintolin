@@ -7,9 +7,12 @@ SHELL := /bin/sh
 default:
 	@echo "Please choose target explicitly."
 
-.PHONY: git_push_all
-git_push_all:
-	git remote | xargs -L1 git push --verbose --all
+.PHONY: git_push_branch
+git_push_branch:
+	git remote | xargs -L1 git push --verbose
+
+.PHONY: git_push_tags
+git_push_tags:
 	git remote | xargs -L1 git push --verbose --tags
 
 .PHONY: install_assets
