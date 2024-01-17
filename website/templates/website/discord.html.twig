@@ -1,6 +1,9 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Hello DiscordController!{% endblock %}
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setPage('Discord server') -%}
+{%- endblock -%}
 
 {% block body %}
   <h1>Discord page</h1>

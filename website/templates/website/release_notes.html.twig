@@ -1,6 +1,9 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Hello ReleaseNotesController!{% endblock %}
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setPage('Release Notes') -%}
+{%- endblock -%}
 
 {% block body %}
   <h1>Release notes page</h1>

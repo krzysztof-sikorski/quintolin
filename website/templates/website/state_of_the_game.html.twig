@@ -1,6 +1,9 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Hello StateOfTheGameController!{% endblock %}
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setPage('State of the Game') -%}
+{%- endblock -%}
 
 {% block body %}
   <h1>State of the game page</h1>

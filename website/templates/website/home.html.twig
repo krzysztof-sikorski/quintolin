@@ -1,6 +1,9 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setSubtitle('Explore. Settle. Trade. Conquer.') -%}
+{%- endblock -%}
 
 {% block body %}
   <h1>Home page</h1>

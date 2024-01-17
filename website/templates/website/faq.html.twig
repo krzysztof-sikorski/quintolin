@@ -1,6 +1,9 @@
 {% extends '/base.html.twig' %}
 
-{% block title %}Hello FaqController!{% endblock %}
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setPage('Frequently Asked Questions') -%}
+{%- endblock -%}
 
 {% block body %}
   <h1>FAQ page</h1>
