@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('vendor/@fontsource/freckle-face/index.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/default.css') }}">
-  {%- block stylesheets -%}{%- endblock -%}
+  {% block stylesheets -%}
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+  {%- endblock %}
   {{ importmap('website') }}
 </head>
 <body>

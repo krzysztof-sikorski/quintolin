@@ -1,5 +1,78 @@
 {% extends '/base.html.twig' %}
 
 {%- block body -%}
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="{{ path('app_website_home') }}">Shintolin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#TODO-game">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true" href="#TODO-game-map">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true" href="#TODO-game-skills">Skills</a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Community
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{{ path('app_website_faq') }}">FAQ</a></li>
+              <li><a class="dropdown-item" href="{{ path('app_website_leaderboard') }}">Leaderboards</a></li>
+              <li><a class="dropdown-item disabled" aria-disabled="true" href="#TODO-chat-history">Chat History</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><h6 class="dropdown-header">External Links</h6></li>
+              <li>
+                <a class="dropdown-item" href="https://www.reddit.com/r/shintolin" target="_blank">Official
+                  Subreddit</a>
+              </li>
+              <li><a class="dropdown-item" href="{{ path('app_website_discord') }}" target="_blank">Discord Chat</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="http://shintolin.wikia.com/wiki/Shintolin" target="_blank">
+                  Old Wiki (outdated)
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Character Name – Fancy Badge
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item disabled" aria-disabled="true" href="#TODO-character-profile">Your Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item disabled" aria-disabled="true" href="#TODO-settlement-profile">
+                  Settlement's Profile
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <form action="#TODO-logout">
+                  <button class="btn btn-outline-light" type="submit" disabled>Log Out</button>
+                </form>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   {% block content %}{% endblock %}
 {% endblock %}

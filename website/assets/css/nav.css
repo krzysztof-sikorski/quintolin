@@ -1,0 +1,49 @@
+.navbar {
+  --bs-navbar-brand-font-size: 1.75em;
+  background-image: var(--gradient-dark);
+
+  &[data-bs-theme="dark"] {
+    --bs-navbar-color: var(--text-light);
+    --bs-navbar-hover-color: var(--text-light);
+  }
+
+  & .navbar-brand {
+    font-family: var(--font-logo);
+  }
+
+  & .btn-link {
+    --bs-link-color: var(--text-light);
+    --bs-btn-hover-color: var(--text-dark);
+    --bs-btn-active-color: var(--text-dark);
+    --bs-btn-hover-bg: var(--bg-light);
+    --bs-btn-active-bg: var(--bg-light);
+    text-decoration: none;
+    &:focus-visible {
+      color: var(--text-dark);
+    }
+  }
+
+  & .nav-link:hover,
+  & .nav-link:focus {
+    background-image: none;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+  }
+
+  & .dropdown-menu {
+    --bs-dropdown-bg: var(--bg-dark);
+    --bs-dropdown-header-color: var(--text-light);
+    --bs-dropdown-link-color: var(--text-light);
+    --bs-dropdown-link-hover-color: var(--text-dark);
+    --bs-dropdown-link-hover-bg: var(--bg-light);
+  }
+
+  & .dropdown-header {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  & form {
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  }
+}
