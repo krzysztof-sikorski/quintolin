@@ -1,3 +1,22 @@
-body {
-  background-color: skyblue;
+/*
+Palette sources:
+http://www.colourlovers.com/palette/45488/french_vanilla
+http://www.colourlovers.com/palette/47378/Camp_Cupcake
+ */
+
+:root {
+  --palette-light: #f7f6e4;
+  --palette-dark: #5f3711;
+
+  --bg-light: var(--palette-light);
+  --bg-dark: var(--palette-dark);
+
+  --border-dark: #341e09;
+
+  --text-light: #f8f7e8;
+  --text-dark: var(--palette-dark);
+
+  --font-logo: 'Freckle Face', cursive;
+
+  --gradient-dark: linear-gradient(to bottom, #5a3410, #704114 100%);
 }
