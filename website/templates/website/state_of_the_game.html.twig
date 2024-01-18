@@ -1,11 +1,11 @@
-{% extends '/base.html.twig' %}
+{% extends 'website/_layout.html.twig' %}
 
 {%- block init -%}
   {{- parent() -}}
   {%- do app_page_title.setPage('State of the Game') -%}
 {%- endblock -%}
 
-{% block body %}
+{% block content %}
   <h1>State of the game page</h1>
   <p>Lorem ipsum...</p>
 {% endblock %}

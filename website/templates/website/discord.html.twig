@@ -1,11 +1,11 @@
-{% extends '/base.html.twig' %}
+{% extends 'website/_layout.html.twig' %}
 
 {%- block init -%}
   {{- parent() -}}
   {%- do app_page_title.setPage('Discord server') -%}
 {%- endblock -%}
 
-{% block body %}
+{% block content %}
   <h1>Discord page</h1>
   <p>Lorem ipsum...</p>
 {% endblock %}
