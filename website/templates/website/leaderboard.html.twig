@@ -1,0 +1,12 @@
+{% extends '/base.html.twig' %}
+
+{%- block init -%}
+  {{- parent() -}}
+  {%- do app_page_title.setPage('Leaderboards') -%}
+  {%- do app_page_title.setItem(metric) -%}
+{%- endblock -%}
+
+{% block body %}
+  <h1>Leaderboard page for metric <q>{{ metric }}</q></h1>
+  <p>Lorem ipsum...</p>
+{% endblock %}
