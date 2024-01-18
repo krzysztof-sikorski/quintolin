@@ -18,15 +18,19 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 final readonly class LeaderboardController
 {
     public const string ROUTE_NAME = 'app_website_leaderboard';
+    private const string DEFAULT_METRIC = 'frags';
 
     public function __construct(
         private UrlGeneratorInterface $urlGenerator,
     ) {}
 
-    public function __invoke(mixed $metric = null): array | RedirectResponse
+    public function __invoke(null | string $metric = null): array | RedirectResponse
     {
         if (null === $metric) {
-            $url = $this->urlGenerator->generate(name: self::ROUTE_NAME, parameters: ['metric' => 'frags']);
+            $url = $this->urlGenerator->generate(
+                name: self::ROUTE_NAME,
+                parameters: ['metric' => self::DEFAULT_METRIC],
+            );
             return new RedirectResponse(url: $url, status: Response::HTTP_FOUND);
         }
 
