@@ -1,0 +1,4 @@
+footer {
+  color: var(--text-light);
+  background-image: var(--gradient-dark);
+}

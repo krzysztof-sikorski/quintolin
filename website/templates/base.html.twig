@@ -13,17 +13,20 @@
   <link rel="stylesheet" href="{{ asset('css/default.css') }}">
   {% block stylesheets -%}
     <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/page.css') }}">
   {%- endblock %}
   {{ importmap('website') }}
 </head>
 <body>
+
 {% block body %}{% endblock %}
+
 {%- set current_datetime = app_clock.now() -%}
 {%- set current_datetime_machine = current_datetime|date(constant('DATE_ATOM')) -%}
 {%- set current_datetime_human = current_datetime|format_datetime(pattern='yyyy-MM-dd HH:mm:ss z') -%}
 <footer>
   <p>
-    Server time:
+    <b>Server time:</b>
     <time datetime="{{ current_datetime_machine }}">{{ current_datetime_human }}</time>
   </p>
 </footer>
