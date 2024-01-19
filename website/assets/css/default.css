@@ -21,6 +21,12 @@ http://www.colourlovers.com/palette/47378/Camp_Cupcake
   --gradient-dark: linear-gradient(to bottom, #5a3410, #704114 100%);
 }
 
+body {
+  cursor: default;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
 footer {
   & p {
     margin: 1rem;
