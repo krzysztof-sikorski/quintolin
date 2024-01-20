@@ -1,6 +1,7 @@
 .navbar {
   --bs-navbar-brand-font-size: 1.75em;
   background-image: var(--gradient-dark);
+  margin-bottom: 1.5rem;
 
   &[data-bs-theme="dark"] {
     --bs-navbar-color: var(--text-light);

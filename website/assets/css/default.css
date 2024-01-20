@@ -28,11 +28,12 @@ body {
 
 header {
   color: var(--text-dark);
+  margin-bottom: 1.5rem;
 }
 
 footer {
   font-size: smaller;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   text-align: center;
 
   & p {
