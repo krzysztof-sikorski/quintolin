@@ -34,7 +34,7 @@ final readonly class HomeController
             'tileCount' => 10070,
             'newestPlayer' => [
                 'url' => '/profile/artya',
-                'name' => 'Artya',
+                'name' => 'Grzegorz Brzęczyszczykiewicz',
             ],
             'startingSettlements' => [
                 ['slug' => 'meadow-camp', 'name' => 'Meadow Camp'],
