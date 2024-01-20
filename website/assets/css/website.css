@@ -1,0 +1,66 @@
+header {
+  color: var(--text-light);
+  background-image: var(--gradient-dark);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & img {
+    margin-right: 2rem;
+    border: 3px solid var(--border-dark);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px var(--border-dark);
+  }
+
+  & h1 {
+    font-family: var(--font-logo);
+    font-size: 6rem;
+    margin: 0;
+  }
+
+  & p.tagline {
+    font-family: var(--font-logo);
+    font-size: 1.5rem;
+  }
+
+  & p.login {
+    margin-bottom: 0.5em;
+  }
+
+  & table.stats {
+    font-size: 0.675rem;
+    border-radius: 0.25em;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    border-collapse: separate;
+    border-spacing: 0.5em;
+    padding: 0.25em 0.5em;
+
+    & a {
+      display: block;
+    }
+
+    & th {
+      text-align: right;
+
+      & a {
+        color: var(--text-dark);
+      }
+    }
+
+    & td {
+      text-align: left;
+
+      & a {
+        min-width: 8ex;
+        max-width: 16ex;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+footer {
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}

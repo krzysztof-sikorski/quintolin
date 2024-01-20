@@ -5,7 +5,45 @@
   {%- do app_page_title.setSubtitle('Explore. Settle. Trade. Conquer.') -%}
 {%- endblock -%}
 
+{% block stylesheets -%}
+  <link rel="stylesheet" href="{{ asset('css/website.css') }}">
+{%- endblock %}
+
 {% block body %}
-  <h1>Home page</h1>
-  <p>Lorem ipsum...</p>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-9">
+          <img src="{{ asset('img/cave_artthumb.webp') }}" width="150" height="150" alt="" class="float-start">
+          <h1>Shintolin</h1>
+          <p class="tagline">Explore. Settle. Trade. Conquer.</p>
+        </div>
+        <div class="col-lg-3 d-none d-lg-flex flex-column align-items-end">
+          <p class="login"><a href="#TODO-login" class="btn btn-light">Login</a></p>
+          <table class="stats">
+            <tbody>
+            <tr>
+              <th><a href="{{ path('app_website_leaderboard', {metric: 'frags'}) }}">Active Players</a></th>
+              <td>{{ activePlayersCount }}</td>
+            </tr>
+            <tr>
+              <th><a href="{{ path('app_website_leaderboard', {metric: 'bigtowns'}) }}">Settlements</a></th>
+              <td>{{ activeSettlementsCount }}</td>
+            </tr>
+            <tr>
+              <th>Map Size</th>
+              <td>{{ tileCount }}</td>
+            </tr>
+            <tr>
+              <th><a href="{{ path('app_website_leaderboard', {metric: 'younguns'}) }}">Newest Player</a></th>
+              <td><a href="#TODO-character-profile">{{ newestPlayer.name }}</a></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </header>
+
 {% endblock %}
