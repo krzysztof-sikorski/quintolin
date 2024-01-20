@@ -23,14 +23,20 @@ http://www.colourlovers.com/palette/47378/Camp_Cupcake
 
 body {
   cursor: default;
-  color: var(--text-dark);
   background-color: var(--bg-light);
 }
 
+header {
+  color: var(--text-dark);
+}
+
 footer {
+  font-size: smaller;
+  margin-top: 1rem;
+  text-align: center;
+
   & p {
-    margin: 1rem;
-    padding: 1rem;
-    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }

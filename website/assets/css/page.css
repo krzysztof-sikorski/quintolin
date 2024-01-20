@@ -1,4 +1,5 @@
 footer {
+  margin-bottom: 1rem;
   color: var(--text-light);
   background-image: var(--gradient-dark);
 }

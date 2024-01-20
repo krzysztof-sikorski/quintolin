@@ -59,8 +59,3 @@ header {
     }
   }
 }
-
-footer {
-  color: var(--text-dark);
-  background-color: var(--bg-light);
-}
