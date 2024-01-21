@@ -2,11 +2,16 @@
 
 {%- block init -%}
   {{- parent() -}}
-  {%- do app_page_title.setPage('Leaderboards') -%}
+  {%- do app_page_title.setPage(world ? 'Local leaderboard' : 'Global leaderboard') -%}
+  {%- do app_page_title.setWorld(world) -%}
   {%- do app_page_title.setItem(metric) -%}
 {%- endblock -%}
 
 {% block content %}
-  <h1>Leaderboard page for metric <q>{{ metric }}</q></h1>
+  {% if world %}
+    <h1>Local leaderboard page for metric <q>{{ metric }}</q> in world <q>{{ world }}</q></h1>
+  {% else %}
+    <h1>Global leaderboard for metric <q>{{ metric }}</q></h1>
+  {% endif %}
   <p>Lorem ipsum...</p>
 {% endblock %}
