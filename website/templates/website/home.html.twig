@@ -24,16 +24,16 @@
           <table class="stats">
             <tbody>
             <tr>
+              <th><a href="{{ path('app_website_leaderboard', {metric: 'worlds'}) }}">Total Worlds</a></th>
+              <td>{{ activeWorldCount }}</td>
+            </tr>
+            <tr>
               <th><a href="{{ path('app_website_leaderboard', {metric: 'frags'}) }}">Active Players</a></th>
-              <td>{{ activePlayersCount }}</td>
+              <td>{{ activePlayerCount }}</td>
             </tr>
             <tr>
-              <th><a href="{{ path('app_website_leaderboard', {metric: 'bigtowns'}) }}">Settlements</a></th>
-              <td>{{ activeSettlementsCount }}</td>
-            </tr>
-            <tr>
-              <th>Map Size</th>
-              <td>{{ tileCount }}</td>
+              <th><a href="{{ path('app_website_leaderboard', {metric: 'bigtowns'}) }}">Active Settlements</a></th>
+              <td>{{ activeSettlementCount }}</td>
             </tr>
             <tr>
               <th><a href="{{ path('app_website_leaderboard', {metric: 'younguns'}) }}">Newest Player</a></th>
@@ -67,7 +67,8 @@
         </ul>
         <p class="screenshots">
           <a href="{{ asset('img/screenshot_full.png') }}">
-            <img src="{{ asset('img/screenshot_full.thumb.webp') }}" width="200" height="165" alt="Screenshot of user interface">
+            <img src="{{ asset('img/screenshot_full.thumb.webp') }}" width="200" height="165"
+                 alt="Screenshot of user interface">
           </a>
         </p>
       </article>

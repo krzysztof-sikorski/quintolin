@@ -22,16 +22,16 @@ final readonly class HomeController
     }
 
     /**
-     * Sample data copied from Wayback Machine snapshots.
+     * Sample data based on Wayback Machine snapshots.
      *
      * @see https://web.archive.org/web/20210924115620/https://www.shintolin.com/
      */
     private function getSampleData(): array
     {
         return [
-            'activePlayersCount' => 14,
-            'activeSettlementsCount' => 7,
-            'tileCount' => 10070,
+            'activeWorldCount' => 13,
+            'activePlayerCount' => 14,
+            'activeSettlementCount' => 7,
             'newestPlayer' => [
                 'url' => '/profile/artya',
                 'name' => 'Grzegorz Brzęczyszczykiewicz',
