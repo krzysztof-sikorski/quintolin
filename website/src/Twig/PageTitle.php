@@ -15,13 +15,14 @@ final class PageTitle
     private string $separator = '';
     private null | string $item = null;
     private null | string $page = null;
+    private null | string $world = null;
     private null | string $root = null;
     private null | string $subtitle = null;
 
     public function __toString(): string
     {
         $parts = array_filter(
-            array: [$this->item, $this->page, $this->root, $this->subtitle],
+            array: [$this->item, $this->page, $this->world, $this->root, $this->subtitle],
             callback: static fn(null | string $part) => null !== $part && '' !== $part,
         );
         return implode(separator: $this->separator, array: $parts);
@@ -40,6 +41,11 @@ final class PageTitle
     public function setPage(null | string $page): void
     {
         $this->page = $page;
+    }
+
+    public function setWorld(null | string $world): void
+    {
+        $this->world = $world;
     }
 
     public function setRoot(null | string $root): void
