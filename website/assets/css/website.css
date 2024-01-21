@@ -65,8 +65,9 @@ body > div.container {
   margin-bottom: 1.5rem;
 }
 
-article.marketing {
-  & p.summary {
+#marketing {
+  & h2 {
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -80,7 +81,7 @@ article.marketing {
   }
 }
 
-article.register {
+#register {
   color: var(--text-light);
   background-image: var(--gradient-dark);
   border-radius: 0.5rem;
