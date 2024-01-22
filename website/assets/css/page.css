@@ -3,3 +3,13 @@ footer {
   color: var(--text-light);
   background-image: var(--gradient-dark);
 }
+
+.jumbotron {
+  padding: 1em 0 2em 0;
+  text-align: center;
+
+  & h1 {
+    font-size: 4rem;
+    font-family: var(--font-logo);
+  }
+}

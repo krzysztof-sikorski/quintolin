@@ -47,3 +47,8 @@ footer {
   --bs-btn-bg: var(--bg-light);
   border-style: none;
 }
+
+.jumbotron {
+  color: var(--text-light);
+  background-color: var(--bg-dark);
+}
