@@ -41,3 +41,9 @@ footer {
     padding-bottom: 1rem;
   }
 }
+
+.btn-light {
+  --bs-btn-color: var(--text-dark);
+  --bs-btn-bg: var(--bg-light);
+  border-style: none;
+}
