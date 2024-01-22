@@ -23,6 +23,7 @@ header {
   }
 
   & p.login {
+    text-align: center;
     margin-bottom: 0.5em;
   }
 

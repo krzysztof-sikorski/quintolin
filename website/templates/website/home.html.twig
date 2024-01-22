@@ -19,9 +19,9 @@
           <h1>Shintolin</h1>
           <p class="tagline">Explore. Settle. Trade. Conquer.</p>
         </div>
-        <div class="col-lg-3 d-none d-lg-flex flex-column align-items-end">
+        <div class="col-12 col-lg-3 d-lg-flex flex-column align-items-end">
           <p class="login"><a href="#TODO-login" class="btn btn-light">Login</a></p>
-          <table class="stats">
+          <table class="stats d-none d-lg-table">
             <tbody>
             <tr>
               <th><a href="{{ path('app_website_leaderboard', {metric: 'worlds'}) }}">Total Worlds</a></th>
@@ -48,31 +48,31 @@
 
   <div class="container">
     <div class="row">
-      <article id="marketing" class="col-lg-7">
+      <article id="marketing" class="col-12 col-lg-7">
         <h2>
           Hunt, or farm. Fight, or heal. Build, or conquer.
           Join fellow players in a free, persistent browser-based world.
         </h2>
-        <p>
+        <p class="d-none d-lg-block">
           Humanity has wandered the world of Shintolin for millenia, hunting and gathering to survive.
           But some grow tired of the nomadic life, and are beginning to settle down.
           Forests make way for farmland, villages grow into towns and cities,
           and civilisations seek wealth, power, and glory.
         </p>
-        <ul>
+        <ul class="d-none d-lg-block">
           <li>Work with other players to build a village, or try and survive the dangers of the wilderness</li>
           <li>Find your fortune through farming, crafting, or trading</li>
           <li>Explore a dynamic world, where every item, building and town is player-created</li>
           <li>Shape the landscape, and write your own chapter in the history of Shintolin</li>
         </ul>
-        <p class="screenshots">
+        <p class="screenshots d-none d-lg-block">
           <a href="{{ asset('img/screenshot_full.png') }}">
             <img src="{{ asset('img/screenshot_full.thumb.webp') }}" width="200" height="165"
                  alt="Screenshot of user interface">
           </a>
         </p>
       </article>
-      <article id="register" class="col-lg-5 jumbotron">
+      <article id="register" class="col-12 col-lg-5 jumbotron">
         <h2>Create Your Account</h2>
         <p><a href="#TODO-login">Already have an account? Log in here.</a></p>
         <form action="#TODO-register" method="POST">
