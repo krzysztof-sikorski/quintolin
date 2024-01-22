@@ -97,3 +97,39 @@ body > div.container {
     color: var(--text-light);
   }
 }
+
+#release-notes {
+  color: var(--text-light);
+  background-image: var(--gradient-dark);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  & h2 {
+    font-size: 3rem;
+    font-family: var(--font-logo);
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    font-family: var(--font-logo);
+
+    & a {
+      color: var(--text-light);
+    }
+  }
+
+  & .note {
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    & :last-child {
+      margin-bottom: 0;
+    }
+  }
+  & .older {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
