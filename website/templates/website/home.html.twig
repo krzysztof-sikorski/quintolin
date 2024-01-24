@@ -104,11 +104,11 @@
         <div class="col-12">
           <h2>Recently Released!</h2>
           <h3>
-            <a href="{{ path('app_website_release_notes', {_fragment: latestReleaseNote.createdAt.getTimestamp()}) }}">
+            <a href="{{ path('app_website_release_notes', {_fragment: latestReleaseNote.id}) }}">
               {{ latestReleaseNote.createdAt|format_date(dateFormat='relative_full') }}
             </a>
           </h3>
-          <div class="note">{{ latestReleaseNote.contentAsHtml|raw }}</div>
+          <div class="note">{{ latestReleaseNote.htmlContent|raw }}</div>
           <p class="older">
             <a href="{{ path('app_website_release_notes') }}" class="btn btn-light">Read Older Release Notes</a>
           </p>
