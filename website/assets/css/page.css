@@ -13,3 +13,11 @@ footer {
     font-family: var(--font-logo);
   }
 }
+
+article.release-note {
+  margin-top: 3rem;
+
+  & a {
+    color: var(--text-dark);
+  }
+}
