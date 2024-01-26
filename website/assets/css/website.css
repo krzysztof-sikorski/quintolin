@@ -38,14 +38,11 @@ header {
 
     & a {
       display: block;
+      color: var(--text-dark);
     }
 
     & th {
       text-align: right;
-
-      & a {
-        color: var(--text-dark);
-      }
     }
 
     & td {
@@ -125,10 +122,14 @@ body > div.container {
     border-radius: 0.5rem;
     padding: 1rem;
 
+    & a {
+      color: var(--text-dark);
+    }
     & :last-child {
       margin-bottom: 0;
     }
   }
+
   & .older {
     text-align: center;
     margin-top: 1rem;
