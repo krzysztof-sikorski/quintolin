@@ -13,6 +13,6 @@ final readonly class ReleaseNotesQuery extends AbstractReleaseNotesQuery
      */
     public function __invoke(): array
     {
-        return parent::fetch(maxCount: null);
+        return $this->fetch(maxCount: null);
     }
 }

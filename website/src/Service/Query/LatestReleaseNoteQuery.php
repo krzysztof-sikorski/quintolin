@@ -10,7 +10,7 @@ final readonly class LatestReleaseNoteQuery extends AbstractReleaseNotesQuery
 {
     public function __invoke(): ReleaseNote
     {
-        $notes = parent::fetch(maxCount: 1);
+        $notes = $this->fetch(maxCount: 1);
         return $notes[0];
     }
 }
