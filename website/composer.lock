@@ -383,10 +383,11 @@
             "dist": {
                 "type": "path",
                 "url": "../modules/storage",
-                "reference": "40dd747426f7ffba283e67e03ffada0a9622ff11"
+                "reference": "93e9e6864db9a5e765f69cee76194292fa809ee6"
             },
             "require": {
                 "php": "^8.3",
+                "psr/cache": "^3.0",
                 "symfony/finder": "^7.0"
             },
             "type": "library",
