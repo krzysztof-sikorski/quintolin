@@ -6,8 +6,8 @@ namespace Quintolin\Core;
 
 final class HealthCheck
 {
-    public function __invoke(): string
+    public function __invoke(): bool
     {
-        return self::class;
+        return true;
     }
 }
