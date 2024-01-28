@@ -1,0 +1,18 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Quintolin\Storage\Query\:
+        resource: '../../../modules/storage/src/Query/'
+
+    Quintolin\Storage\Query\AbstractReleaseNotesQuery:
+        abstract: true
+        arguments:
+            $projectDir: '%kernel.project_dir%/data/release-notes'
+
+    Quintolin\Storage\Query\LatestReleaseNoteQuery:
+        parent: Quintolin\Storage\Query\AbstractReleaseNotesQuery
+
+    Quintolin\Storage\Query\ReleaseNotesQuery:
+        parent: Quintolin\Storage\Query\AbstractReleaseNotesQuery

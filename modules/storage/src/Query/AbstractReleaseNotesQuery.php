@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Service\Query;
+namespace Quintolin\Storage\Query;
 
-use Quintolin\Storage\QueryResult\ReleaseNote;
 use DateTimeImmutable;
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
+use Quintolin\Storage\QueryResult\ReleaseNote;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
@@ -15,7 +14,6 @@ use function sprintf;
 abstract readonly class AbstractReleaseNotesQuery
 {
     public function __construct(
-        #[Autowire('%kernel.project_dir%/data/release-notes')]
         private string $projectDir,
     ) {}
 

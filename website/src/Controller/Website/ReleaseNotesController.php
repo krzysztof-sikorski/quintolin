@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller\Website;
 
-use App\Service\Query\ReleaseNotesQuery;
+use Quintolin\Storage\Query\ReleaseNotesQuery;
 use Symfony\Bridge\Twig\Attribute\Template;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Attribute\AsController;
