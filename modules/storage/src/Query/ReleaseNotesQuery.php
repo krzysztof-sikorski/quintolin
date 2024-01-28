@@ -13,6 +13,6 @@ final readonly class ReleaseNotesQuery extends AbstractReleaseNotesQuery
      */
     public function __invoke(): array
     {
-        return $this->repository->fetch(maxCount: null);
+        return $this->get(maxCount: null);
     }
 }
