@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service\Query;
 
-use App\DTO\QueryResult\ReleaseNote;
+use Quintolin\Storage\QueryResult\ReleaseNote;
 
 final readonly class LatestReleaseNoteQuery extends AbstractReleaseNotesQuery
 {

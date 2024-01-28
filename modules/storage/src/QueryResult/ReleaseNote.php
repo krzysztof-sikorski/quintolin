@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\DTO\QueryResult;
+namespace Quintolin\Storage\QueryResult;
 
 use DateTimeImmutable;
 
