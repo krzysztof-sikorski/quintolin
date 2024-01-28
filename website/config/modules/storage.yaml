@@ -3,16 +3,12 @@ services:
         autowire: true
         autoconfigure: true
 
+    Quintolin\Storage\Repository\:
+        resource: '../../../modules/storage/src/Repository/'
+
     Quintolin\Storage\Query\:
         resource: '../../../modules/storage/src/Query/'
 
-    Quintolin\Storage\Query\AbstractReleaseNotesQuery:
-        abstract: true
+    Quintolin\Storage\Repository\ReleaseNoteRepository:
         arguments:
             $projectDir: '%kernel.project_dir%/data/release-notes'
-
-    Quintolin\Storage\Query\LatestReleaseNoteQuery:
-        parent: Quintolin\Storage\Query\AbstractReleaseNotesQuery
-
-    Quintolin\Storage\Query\ReleaseNotesQuery:
-        parent: Quintolin\Storage\Query\AbstractReleaseNotesQuery
