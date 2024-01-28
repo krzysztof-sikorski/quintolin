@@ -25,6 +25,7 @@
     "ext-ctype": "*",
     "ext-iconv": "*",
     "quintolin/core": "^0.0.1",
+    "quintolin/storage": "^0.0.1",
     "symfony/asset": "7.0.*",
     "symfony/asset-mapper": "7.0.*",
     "symfony/cache": "7.0.*",
@@ -72,6 +73,10 @@
     {
       "type": "path",
       "url": "../modules/core"
+    },
+    {
+      "type": "path",
+      "url": "../modules/storage"
     }
   ],
   "config": {

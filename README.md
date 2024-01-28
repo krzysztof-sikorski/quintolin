@@ -45,5 +45,6 @@ This project is published to multiple core-sharing portals:
 - [legacy](legacy/README.md): History and source code of previous versions of
   the game
 - [modules/core](modules/core/README.md): core engine of the game
+- [modules/storage](modules/storage/README.md): storage module for the game
 - `tools`: developer tools
 - [website](website/README.md): website and UI

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51fb2d2265e910ad7243ae4788bdb909",
+    "content-hash": "eafe42c282ea9b4550d687735901053f",
     "packages": [
         {
             "name": "composer/semver",
@@ -365,6 +365,46 @@
                 }
             ],
             "description": "Core engine for Quintolin PBBG",
+            "homepage": "https://www.shintolin.com/",
+            "keywords": [
+                "game",
+                "pbbg"
+            ],
+            "support": {
+                "chat": "https://discord.gg/ZKTSKne"
+            },
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "quintolin/storage",
+            "version": "0.0.1",
+            "dist": {
+                "type": "path",
+                "url": "../modules/storage",
+                "reference": "c0639a4f9219857d652659ab6fdea88a91b6ef71"
+            },
+            "require": {
+                "php": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Quintolin\\Storage\\": "src/"
+                }
+            },
+            "license": [
+                "AGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Krzysztof Sikorski",
+                    "homepage": "https://zerozero.pl/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Storage module for Quintolin PBBG",
             "homepage": "https://www.shintolin.com/",
             "keywords": [
                 "game",
