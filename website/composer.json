@@ -71,7 +71,7 @@
   "repositories": [
     {
       "type": "path",
-      "url": "../core"
+      "url": "../modules/core"
     }
   ],
   "config": {
