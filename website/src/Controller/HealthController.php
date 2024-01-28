@@ -12,7 +12,7 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Attribute\Route;
 
 #[AsController]
-#[Route(path: '/health', name: 'app_health_check', methods: [Request::METHOD_GET])]
+#[Route(path: '/health', name: 'app_health', methods: [Request::METHOD_GET])]
 final readonly class HealthController
 {
     public function __invoke(): Response
