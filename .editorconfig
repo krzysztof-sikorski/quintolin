@@ -34,10 +34,14 @@ max_line_length = 120
 indent_size = 4
 max_line_length = off
 
-[/website/config/routes/*.yaml]
+[/website/config/modules/*.yaml]
 indent_size = 4
 max_line_length = off
 
 [/website/config/packages/*.yaml]
+indent_size = 4
+max_line_length = off
+
+[/website/config/routes/*.yaml]
 indent_size = 4
 max_line_length = off
