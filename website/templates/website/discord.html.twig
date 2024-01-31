@@ -2,7 +2,7 @@
 
 {%- block init -%}
   {{- parent() -}}
-  {%- do app_page_title.setPage('Discord server') -%}
+  {%- do app_set_page_title_page('Discord server') -%}
 {%- endblock -%}
 
 {% block content %}

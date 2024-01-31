@@ -1,8 +1,6 @@
 twig:
     file_name_pattern: '*.twig'
     default_path: '%kernel.project_dir%/templates'
-    globals:
-        app_page_title: '@App\Twig\DTO\PageTitle'
 
 when@test:
     twig:

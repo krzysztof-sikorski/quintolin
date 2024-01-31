@@ -1,13 +1,13 @@
 {%- block init -%}
-  {%- do app_page_title.setSeparator(' – ') -%} {# U+2013 EN DASH #}
-  {%- do app_page_title.setRoot('Shintolin') -%}
+  {%- do app_set_page_title_separator(' – ') -%} {# U+2013 EN DASH #}
+  {%- do app_set_page_title_root('Shintolin') -%}
 {%- endblock -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ app_page_title }}</title>
+  <title>{{ app_page_title() }}</title>
   <link rel="stylesheet" href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('vendor/@fontsource/freckle-face/index.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/default.css') }}">

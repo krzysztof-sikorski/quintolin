@@ -2,9 +2,9 @@
 
 {%- block init -%}
   {{- parent() -}}
-  {%- do app_page_title.setPage(world ? 'Local leaderboard' : 'Global leaderboard') -%}
-  {%- do app_page_title.setWorld(world) -%}
-  {%- do app_page_title.setItem(metric) -%}
+  {%- do app_set_page_title_page(world ? 'Local leaderboard' : 'Global leaderboard') -%}
+  {%- do app_set_page_title_world(world) -%}
+  {%- do app_set_page_title_item(metric) -%}
 {%- endblock -%}
 
 {% block content %}
