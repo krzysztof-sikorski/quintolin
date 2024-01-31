@@ -36,6 +36,16 @@ footer {
   margin-top: 1.5rem;
   text-align: center;
 
+  & dl {
+    text-align: center;
+
+    & > * {
+      display: inline;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
   & p {
     padding-top: 1rem;
     padding-bottom: 1rem;
