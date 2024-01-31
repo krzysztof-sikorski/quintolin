@@ -14,11 +14,11 @@ use Twig\TwigFunction;
 
 final class AppExtension extends AbstractExtension
 {
-    private PageTitle $pageTitle;
+    private readonly PageTitle $pageTitle;
 
     public function __construct(
-        private ClockInterface $clock,
-        private VersionReader $versionReader,
+        private readonly ClockInterface $clock,
+        private readonly VersionReader $versionReader,
     ) {
         $this->pageTitle = new PageTitle();
     }
