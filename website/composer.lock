@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01a78a0a3c014047539e06c2f37f5a9a",
+    "content-hash": "978b8e8534ffa2487ca8089c07d22ee0",
     "packages": [
         {
             "name": "composer/semver",
@@ -339,11 +339,11 @@
         },
         {
             "name": "quintolin/core",
-            "version": "0.0.1",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../modules/core",
-                "reference": "71ff64c8723e825a1437cadc00f1229e262a1490"
+                "reference": "8f043e9fc03e20c41554f3ab23abeca65c704ad0"
             },
             "require": {
                 "php": "^8.3"
@@ -379,11 +379,11 @@
         },
         {
             "name": "quintolin/storage",
-            "version": "0.0.1",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../modules/storage",
-                "reference": "93e9e6864db9a5e765f69cee76194292fa809ee6"
+                "reference": "fafc262bf9977e70948b3d721203b59a7ee07462"
             },
             "require": {
                 "php": "^8.3",
@@ -3880,7 +3880,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "quintolin/core": 20,
+        "quintolin/storage": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

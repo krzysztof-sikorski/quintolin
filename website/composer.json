@@ -1,7 +1,6 @@
 {
   "name": "quintolin/website",
   "description": "Website and UI for Quintolin PBBG",
-  "version": "0.0.1",
   "type": "project",
   "keywords": [
     "game",
@@ -24,8 +23,8 @@
     "php": "^8.3",
     "ext-ctype": "*",
     "ext-iconv": "*",
-    "quintolin/core": "^0.0.1",
-    "quintolin/storage": "^0.0.1",
+    "quintolin/core": "@dev",
+    "quintolin/storage": "@dev",
     "symfony/asset": "7.0.*",
     "symfony/asset-mapper": "7.0.*",
     "symfony/cache": "7.0.*",
