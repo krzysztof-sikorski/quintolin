@@ -21,7 +21,7 @@
 
 {% block body %}{% endblock %}
 
-{%- set current_datetime = app_clock.now() -%}
+{%- set current_datetime = app_server_time() -%}
 {%- set current_datetime_machine = current_datetime|date(constant('DATE_ATOM')) -%}
 {%- set current_datetime_human = current_datetime|format_datetime(pattern='yyyy-MM-dd, HH:mm:ss z') -%}
 <footer>
