@@ -3,7 +3,7 @@ twig:
     default_path: '%kernel.project_dir%/templates'
     globals:
         app_clock: '@Psr\Clock\ClockInterface'
-        app_page_title: '@App\Twig\PageTitle'
+        app_page_title: '@App\Twig\DTO\PageTitle'
 
 when@test:
     twig:

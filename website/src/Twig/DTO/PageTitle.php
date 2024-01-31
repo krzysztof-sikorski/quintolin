@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Twig;
+namespace App\Twig\DTO;
 
 use function array_filter;
 use function implode;
