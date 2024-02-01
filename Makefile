@@ -20,7 +20,16 @@ git_push_tags:
 
 # clean all temporary files (cache, logs, etc)
 .PHONY: clean_all
-clean_all: tools_clean_cache website_clean_all
+clean_all: tools_clean_all website_clean_all
+
+# tools: clean all temporary files (cache, dependencies, etc)
+.PHONY: tools_clean_all
+tools_clean_all: tools_clean_cache tools_uninstall
+
+# tools: uninstall all dependencies
+.PHONY: tools_uninstall
+tools_uninstall:
+	rm --force --recursive --verbose tools/php-cs-fixer/vendor
 
 # tools: remove all cache files
 .PHONY: tools_clean_cache
