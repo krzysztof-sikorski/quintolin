@@ -23,6 +23,16 @@ git_push_tags:
 tools_clean_cache:
 	rm --force --verbose .php-cs-fixer.cache
 
+# tools: install "PHP Coding Standards Fixer" library
+.PHONY: tools_install_php_cs_fixer
+tools_install_php_cs_fixer:
+	composer --quiet --working-dir=tools/php-cs-fixer install
+
+# tools: lint PHP coding style across all directories
+.PHONY: lint_coding_style
+lint_coding_style: tools_install_php_cs_fixer
+	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
+
 # website: install dependencies defined for assets
 .PHONY: website_install_asset_dependencies
 website_install_asset_dependencies:
@@ -47,16 +57,6 @@ website_clean_cache:
 .PHONY: website_clean_logs
 website_clean_logs:
 	rm --force --recursive --verbose website/var/log
-
-# tools: install "PHP Coding Standards Fixer" library
-.PHONY: tools_install_php_cs_fixer
-tools_install_php_cs_fixer:
-	composer --quiet --working-dir=tools/php-cs-fixer install
-
-# tools: lint PHP coding style across all directories
-.PHONY: lint_coding_style
-lint_coding_style: tools_install_php_cs_fixer
-	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
 
 # website: lint all Twig templates
 .PHONY: website_lint_twig_templates
