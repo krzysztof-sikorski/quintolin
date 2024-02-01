@@ -1,5 +1,5 @@
 {
-  "name": "krzysztof-sikorski/php-cs-fixer-bundle",
+  "name": "quintolin/php-cs-fixer-bundle",
   "description": "Dummy project to load php-cs-fixer package.",
   "type": "project",
   "license": "MIT",
