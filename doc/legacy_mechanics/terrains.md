@@ -5,6 +5,8 @@ Documentation how terrain types were defined in previous versions of the game.
 Definitions from v2 are stored in [terrains.csv](data/terrains.csv) file.
 Description of columns below.
 
+<!-- editorconfig-checker-disable -->
+
 | Field           | Data type                    | Description                                                                                    |
 |-----------------|------------------------------|------------------------------------------------------------------------------------------------|
 | key             | string                       | unique identifier (in code)                                                                    |
@@ -28,6 +30,8 @@ Description of columns below.
 | transition_odds | map(reference,int)           | chances per season that terrain type changes                                                   |
 | dig             | map(reference,int)           | loot chances (as percentages?) for digging                                                     |
 | restore_odds    | int                          | percentage chance that tile will restore its depletion (defaults to 10%)                       |
+
+<!-- editorconfig-checker-enable -->
 
 ## Notes
 

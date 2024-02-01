@@ -13,6 +13,8 @@ Ticks were grouped in sets, differing by their frequency:
 - Hourly tick (every full hour)
 - Minutely tick (every full minute, only used in v3)
 
+<!-- editorconfig-checker-disable -->
+
 | Operation                   | Schedule                                                       |
 |-----------------------------|----------------------------------------------------------------|
 | Restore AP                  | Hourly in v2, Minutely in v3                                   |
@@ -31,6 +33,8 @@ Ticks were grouped in sets, differing by their frequency:
 | Delete rotten food          | Daily in v2, Never in v3                                       |
 | Rot food                    | Daily                                                          |
 | Storm damage                | Daily                                                          |
+
+<!-- editorconfig-checker-enable -->
 
 ## Restore AP
 

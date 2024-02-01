@@ -5,6 +5,8 @@ Documentation how buildings were defined in previous versions of the game.
 Definitions from v2 are stored in [buildings.csv](data/buildings.csv) file.
 Description of columns below.
 
+<!-- editorconfig-checker-disable -->
+
 | Field            | Data type            | Description                                                  |
 |------------------|----------------------|--------------------------------------------------------------|
 | key              | string               | unique identifier (in code)                                  |
@@ -32,6 +34,8 @@ Description of columns below.
 | use_skill        | reference            | skill that is boosted by being inside                        |
 | effect_bonus     | map(reference,float) | multipliers for effects of specific actions done inside      |
 | craft_ap_bonus   | map(reference,float) | multipliers for AP costs of specific actions done inside     |
+
+<!-- editorconfig-checker-enable -->
 
 ## Notes
 

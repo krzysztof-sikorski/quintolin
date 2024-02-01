@@ -5,6 +5,8 @@ Documentation how animals were defined in previous versions of the game.
 Definitions from v2 are stored in [animals.csv](data/animals.csv) file.
 Description of columns below.
 
+<!-- editorconfig-checker-disable -->
+
 | Field         | Data type          | Description                                                                  |
 |---------------|--------------------|------------------------------------------------------------------------------|
 | key           | string             | unique identifier (in code)                                                  |
@@ -19,6 +21,8 @@ Description of columns below.
 | loot          | map(reference,int) | list of items dropped on death                                               |
 | loot_bonus    | map(reference,int) | additional loot for characters with `butchering` skill                       |
 | immobile      | bool               | unable to move (never executes "flee" action)                                |
+
+<!-- editorconfig-checker-enable -->
 
 ## Notes
 

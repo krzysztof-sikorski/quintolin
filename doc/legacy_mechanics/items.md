@@ -5,6 +5,8 @@ Documentation how items were defined in previous versions of the game.
 Definitions from v2 are stored in [items.csv](data/items.csv) file.
 Description of columns below.
 
+<!-- editorconfig-checker-disable -->
+
 | Field          | Data type                    | Description                                                                               |
 |----------------|------------------------------|-------------------------------------------------------------------------------------------|
 | key            | string                       | unique identifier (in code)                                                               |
@@ -31,6 +33,8 @@ Description of columns below.
 | craft_skill    | optional(reference)          | skill required for crafting                                                               |
 | plantable      | optional(bool)               | can be planted?                                                                           |
 | extra_products | map(reference,int)           | additional items created along with the main batch                                        |
+
+<!-- editorconfig-checker-enable -->
 
 ## Notes
 
