@@ -18,6 +18,10 @@ git_push_current_branch:
 git_push_tags:
 	git remote | xargs -L1 git push --verbose --tags
 
+# clean all temporary files (cache, logs, etc)
+.PHONY: clean_all
+clean_all: tools_clean_cache website_clean_all
+
 # tools: remove all cache files
 .PHONY: tools_clean_cache
 tools_clean_cache:
@@ -32,6 +36,10 @@ tools_install_php_cs_fixer:
 .PHONY: lint_coding_style
 lint_coding_style: tools_install_php_cs_fixer
 	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
+
+# website: clean all temporary files (cache, logs, etc)
+.PHONY: website_clean_all
+website_clean_all: website_clean_assets website_clean_cache website_clean_logs
 
 # website: install dependencies defined for assets
 .PHONY: website_install_asset_dependencies
