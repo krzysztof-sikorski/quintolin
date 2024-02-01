@@ -28,6 +28,11 @@ max_line_length = off
 indent_size = 4
 max_line_length = 120
 
+[.gitmodules]
+indent_style = tab
+indent_size = 4
+max_line_length = unset
+
 [LICENSE*]
 indent_style = unset
 indent_size = unset
