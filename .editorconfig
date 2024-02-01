@@ -42,6 +42,11 @@ max_line_length = unset
 max_line_length = unset
 indent_style = tab
 
+[/website/.env*]
+indent_style = unset
+indent_size = unset
+max_line_length = unset
+
 [/website/bin/console]
 indent_size = 4
 max_line_length = 120
