@@ -30,7 +30,7 @@ tools_clean_cache:
 # tools: install "PHP Coding Standards Fixer" library
 .PHONY: tools_install_php_cs_fixer
 tools_install_php_cs_fixer:
-	composer --quiet --working-dir=tools/php-cs-fixer install
+	composer --working-dir=tools/php-cs-fixer install
 
 # tools: lint PHP coding style across all directories
 .PHONY: lint_coding_style
