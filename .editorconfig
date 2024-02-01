@@ -12,6 +12,11 @@ max_line_length = 80
 [*.css]
 max_line_length = 120
 
+[*.csv]
+indent_style = unset
+indent_size = unset
+max_line_length = unset
+
 [{*.html,*.html.twig}]
 max_line_length = 120
 
