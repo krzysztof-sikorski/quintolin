@@ -18,14 +18,14 @@
   <div class="container">
     <div class="row">
       {% for note in notes %}
-      <article id="{{ note.id }}" class="release-note col-12">
-        <h2>
-          <a href="#{{ note.id }}">
-            {{ note.createdAt|format_date(dateFormat='relative_full') }}
-          </a>
-        </h2>
-        <div class="note">{{ note.htmlContent|raw }}</div>
-      </article>
+        <article id="{{ note.id }}" class="release-note col-12">
+          <h2>
+            <a href="#{{ note.id }}">
+              {{ note.createdAt|format_date(dateFormat='relative_full') }}
+            </a>
+          </h2>
+          <div class="note">{{ note.htmlContent|raw }}</div>
+        </article>
       {% endfor %}
     </div>
   </div>
