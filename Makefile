@@ -3,51 +3,62 @@ SHELL := /bin/sh
 .SUFFIXES: # no special suffixes
 .DEFAULT_GOAL := default
 
+# dummy entry to force make to do nothing by default
 .PHONY: default
 default:
 	@echo "Please choose target explicitly."
 
-.PHONY: git_push_branch
-git_push_branch:
+# git helper: push current branch to configured remotes
+.PHONY: git_push_current_branch
+git_push_current_branch:
 	git remote | xargs -L1 git push --verbose
 
+# git helper: push all tags to all configured remotes
 .PHONY: git_push_tags
 git_push_tags:
 	git remote | xargs -L1 git push --verbose --tags
 
-.PHONY: install_assets
-install_assets:
+# tools: remove all cache files
+.PHONY: tools_clean_cache
+tools_clean_cache:
+	rm --force --verbose .php-cs-fixer.cache
+
+# website: install dependencies defined for assets
+.PHONY: website_install_asset_dependencies
+website_install_asset_dependencies:
 	php website/bin/console -vvv importmap:install
 
-.PHONY: compile_assets
-compile_assets:
+# website: compile assets for production environment
+.PHONY: website_compile_assets
+website_compile_assets:
 	php website/bin/console -vvv asset-map:compile
 
-.PHONY: clean_assets
-clean_assets:
+# website: remove all compiled assets
+.PHONY: website_clean_assets
+website_clean_assets:
 	rm --force --recursive --verbose website/public/assets/*
 
-.PHONY: clean_cache
-clean_cache:
-	rm --force --verbose .php-cs-fixer.cache
+# website: remove all cache files
+.PHONY: website_clean_cache
+website_clean_cache:
 	rm --force --recursive --verbose website/var/cache
 
-.PHONY: clean_logs
-clean_logs:
+# website: remove all log files
+.PHONY: website_clean_logs
+website_clean_logs:
 	rm --force --recursive --verbose website/var/log
 
-.PHONY: install_php_cs_fixer
-install_php_cs_fixer:
+# tools: install "PHP Coding Standards Fixer" library
+.PHONY: tools_install_php_cs_fixer
+tools_install_php_cs_fixer:
 	composer --quiet --working-dir=tools/php-cs-fixer install
 
+# tools: lint PHP coding style across all directories
 .PHONY: lint_coding_style
-lint_coding_style: install_php_cs_fixer
+lint_coding_style: tools_install_php_cs_fixer
 	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
 
-.PHONY: fix_coding_style
-fix_coding_style: install_php_cs_fixer
-	tools/php-cs-fixer/vendor/bin/php-cs-fixer fix -vvv
-
-.PHONY: lint_twig_templates
-lint_twig_templates:
+# website: lint all Twig templates
+.PHONY: website_lint_twig_templates
+website_lint_twig_templates:
 	website/bin/console lint:twig -vvv --show-deprecations
