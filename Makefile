@@ -29,12 +29,23 @@ tools_clean_all: tools_clean_cache tools_uninstall
 # tools: uninstall all dependencies
 .PHONY: tools_uninstall
 tools_uninstall:
+	rm --force --recursive --verbose tools/editorconfig-checker/vendor
 	rm --force --recursive --verbose tools/php-cs-fixer/vendor
 
 # tools: remove all cache files
 .PHONY: tools_clean_cache
 tools_clean_cache:
 	rm --force --verbose .php-cs-fixer.cache
+
+# tools: install "EditorConfig Checker" library
+.PHONY: tools_install_editorconfig_checker
+tools_install_editorconfig_checker:
+	composer --working-dir=tools/editorconfig-checker install
+
+# tools: lint PHP coding style across all directories
+.PHONY: lint_editorconfig
+lint_editorconfig: tools_install_editorconfig_checker
+	tools/editorconfig-checker/vendor/bin/ec
 
 # tools: install "PHP Coding Standards Fixer" library
 .PHONY: tools_install_php_cs_fixer
