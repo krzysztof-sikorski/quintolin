@@ -62,3 +62,15 @@ footer {
   color: var(--text-light);
   background-color: var(--bg-dark);
 }
+
+a[rel=external]::after {
+  content: " ↗";
+}
+
+a[data-link-status=dead] {
+  text-decoration: line-through;
+
+  &::after {
+    content: " 🪦";
+  }
+}
