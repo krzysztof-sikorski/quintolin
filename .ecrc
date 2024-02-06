@@ -7,6 +7,7 @@
   "NoColor": false,
   "Exclude": [
     "^.idea/",
+    "^.php-cs-fixer.cache$",
     "^doc/wayback_machine/",
     "^legacy/",
     "^website/assets/vendor/",
