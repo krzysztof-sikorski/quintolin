@@ -20,36 +20,17 @@ git_push_tags:
 
 # clean all temporary files (cache, logs, etc)
 .PHONY: clean_all
-clean_all: tools_clean_all website_clean_all
-
-# tools: clean all temporary files (cache, dependencies, etc)
-.PHONY: tools_clean_all
-tools_clean_all: tools_clean_cache tools_uninstall
-
-# tools: uninstall all dependencies
-.PHONY: tools_uninstall
-tools_uninstall:
-	rm --force --recursive --verbose tools/php-cs-fixer/vendor
-
-# tools: remove all cache files
-.PHONY: tools_clean_cache
-tools_clean_cache:
-	rm --force --verbose .php-cs-fixer.cache
+clean_all: website_clean_all
 
 # tools: lint all files against EditorConfig settings
 .PHONY: lint_editorconfig
 lint_editorconfig:
 	docker container run --rm --user=$$UID --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
 
-# tools: install "PHP Coding Standards Fixer" library
-.PHONY: tools_install_php_cs_fixer
-tools_install_php_cs_fixer:
-	composer --working-dir=tools/php-cs-fixer install
-
 # tools: lint PHP coding style across all directories
 .PHONY: lint_coding_style
-lint_coding_style: tools_install_php_cs_fixer
-	tools/php-cs-fixer/vendor/bin/php-cs-fixer check -vvv
+lint_coding_style:
+	docker container run --rm --user=$$UID --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.47-php8.3 check -vvv
 
 # website: clean all temporary files (cache, logs, etc)
 .PHONY: website_clean_all
