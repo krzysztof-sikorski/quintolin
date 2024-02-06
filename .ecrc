@@ -6,7 +6,14 @@
   "SpacesAftertabs": false,
   "NoColor": false,
   "Exclude": [
-    "^doc/wayback_machine/"
+    "^.idea/",
+    "^doc/wayback_machine/",
+    "^legacy/",
+    "^website/assets/vendor/",
+    "^website/public/assets/",
+    "^website/public/bundles/",
+    "^website/var/",
+    "^website/vendor/"
   ],
   "AllowedContentTypes": [],
   "PassedFiles": [],
