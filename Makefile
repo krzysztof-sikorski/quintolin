@@ -39,7 +39,7 @@ tools_clean_cache:
 # tools: lint all files against EditorConfig settings
 .PHONY: lint_editorconfig
 lint_editorconfig:
-	docker run --rm --user=$$UID --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
+	docker container run --rm --user=$$UID --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
 
 # tools: install "PHP Coding Standards Fixer" library
 .PHONY: tools_install_php_cs_fixer
