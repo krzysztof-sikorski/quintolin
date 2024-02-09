@@ -14,18 +14,18 @@ $rules = [
     '@PHPUnit100Migration:risky' => true,
 
     // override config from rule sets
+    'binary_operator_spaces' => true,
     'ordered_class_elements' => true,
-    'single_class_element_per_statement' => true,
-    'trailing_comma_in_multiline' => [
-        'after_heredoc' => true,
-        'elements' => ['arguments', 'arrays', 'match', 'parameters'],
-    ],
     'ordered_imports' => [
         'imports_order' => ['class', 'function', 'const'],
         'sort_algorithm' => 'alpha',
     ],
+    'single_class_element_per_statement' => true,
     'single_import_per_statement' => true,
-    'binary_operator_spaces' => true,
+    'trailing_comma_in_multiline' => [
+        'after_heredoc' => true,
+        'elements' => ['arguments', 'arrays', 'match', 'parameters'],
+    ],
 
     // additional rules from “Alias” category
     'array_push' => true,
