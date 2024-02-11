@@ -1,10 +1,14 @@
 <?php
 
 declare(strict_types=1);
+use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
+use Symfony\Bundle\MakerBundle\MakerBundle;
+use Symfony\Bundle\TwigBundle\TwigBundle;
+use Twig\Extra\TwigExtraBundle\TwigExtraBundle;
 
 return [
-    Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
-    Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
-    Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
-    Twig\Extra\TwigExtraBundle\TwigExtraBundle::class => ['all' => true],
+    FrameworkBundle::class => ['all' => true],
+    MakerBundle::class => ['dev' => true],
+    TwigBundle::class => ['all' => true],
+    TwigExtraBundle::class => ['all' => true],
 ];
