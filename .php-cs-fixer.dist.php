@@ -48,7 +48,7 @@ $rules = [
 
     // additional rules from “Basic” category
     'no_trailing_comma_in_singleline' => true,
-    'psr_autoloading' => true,
+    'numeric_literal_separator' => true,
 
     // additional rules from “Casing” category
     'class_reference_name_casing' => true,
@@ -59,7 +59,6 @@ $rules = [
     'native_type_declaration_casing' => true,
 
     // additional rules from “Cast Notation” category
-    'cast_spaces' => true,
     'modernize_types_casting' => true,
     'no_short_bool_cast' => true,
 
@@ -134,7 +133,7 @@ $rules = [
     'static_lambda' => true,
 
     // additional rules from “Import” category
-    'fully_qualified_strict_types' => true,
+    'fully_qualified_strict_types' => ['import_symbols' => true],
     'global_namespace_import' => [
         'import_classes' => true,
         'import_constants' => true,
@@ -167,10 +166,9 @@ $rules = [
     'logical_operators' => true,
     'no_useless_concat_operator' => ['juggle_simple_strings' => true],
     'no_useless_nullsafe_operator' => true,
-    'not_operator_with_space' => true,
+    'not_operator_with_successor_space' => true,
     'object_operator_without_whitespace' => true,
     'operator_linebreak' => true,
-    'standardize_increment' => true,
     'standardize_not_equals' => true,
     'ternary_to_elvis_operator' => true,
 
@@ -196,6 +194,7 @@ $rules = [
     'phpdoc_indent' => true,
     'phpdoc_inline_tag_normalizer' => true,
     'phpdoc_line_span' => true,
+    'phpdoc_list_type' => true,
     'phpdoc_no_access' => true,
     'phpdoc_no_alias_tag' => true,
     'phpdoc_no_empty_return' => true,
@@ -207,7 +206,6 @@ $rules = [
     'phpdoc_return_self_reference' => true,
     'phpdoc_scalar' => true,
     'phpdoc_separation' => true,
-    'phpdoc_single_line_var_spacing' => true,
     'phpdoc_summary' => true,
     'phpdoc_tag_casing' => true,
     'phpdoc_tag_type' => true,
@@ -215,13 +213,11 @@ $rules = [
     'phpdoc_trim_consecutive_blank_line_separation' => true,
     'phpdoc_trim' => true,
     'phpdoc_types' => true,
-    'phpdoc_types_order' => true,
     'phpdoc_var_annotation_correct_order' => true,
     'phpdoc_var_without_name' => true,
 
     // additional rules from “Return Notation” category
     'no_useless_return' => true,
-    'return_assignment' => true,
     'simplified_null_return' => true,
 
     // additional rules from “Semicolon” category
@@ -230,7 +226,6 @@ $rules = [
     ],
     'no_empty_statement' => true,
     'no_singleline_whitespace_before_semicolons' => true,
-    'semicolon_after_instruction' => true,
     'space_after_semicolon' => true,
 
     // additional rules from “Strict” category
@@ -238,17 +233,34 @@ $rules = [
     'strict_param' => true,
 
     // additional rules from “String Notation” category
-    'escape_implicit_backslashes' => true,
     'explicit_string_variable' => true,
+    'heredoc_closing_marker' => ['explicit_heredoc_style' => true],
     'heredoc_to_nowdoc' => true,
     'no_binary_string' => true,
     'single_quote' => true,
+    'string_implicit_backslashes' => true,
     'string_length_to_empty' => true,
 
     // additional rules from “Whitespace” category
     'array_indentation' => true,
     'method_chaining_indentation' => true,
-    'no_extra_blank_lines' => true,
+    'no_extra_blank_lines' => [
+        'tokens' => [
+            'attribute',
+            'break',
+            'case',
+            'continue',
+            'curly_brace_block',
+            'default',
+            'extra',
+            'parenthesis_brace_block',
+            'return',
+            'square_brace_block',
+            'switch',
+            'throw',
+            'use',
+        ],
+    ],
     'no_spaces_around_offset' => true,
     'type_declaration_spaces' => true,
     'types_spaces' => ['space' => 'single'],
