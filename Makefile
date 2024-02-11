@@ -22,17 +22,17 @@ git_push_tags:
 .PHONY: clean_all
 clean_all: website_clean_all
 
-# tools: lint all files against EditorConfig settings
+# lint all files against EditorConfig settings
 .PHONY: lint_editorconfig
 lint_editorconfig:
 	docker container run --rm --user=$$UID --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
 
-# tools: lint PHP coding style across all directories
+# lint PHP coding style across all directories
 .PHONY: lint_coding_style
 lint_coding_style:
 	docker container run --rm --user=$$UID --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 check -vvv
 
-# tools: fix PHP coding style across all directories
+# fix PHP coding style across all directories
 .PHONY: fix_coding_style
 fix_coding_style:
 	docker container run --rm --user=$$UID --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 fix -vvv
