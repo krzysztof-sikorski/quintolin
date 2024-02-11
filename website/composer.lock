@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "978b8e8534ffa2487ca8089c07d22ee0",
+    "content-hash": "0350047ca22dbad87d58885209eadcae",
     "packages": [
         {
             "name": "composer/semver",
@@ -339,11 +339,11 @@
         },
         {
             "name": "quintolin/core",
-            "version": "dev-main",
+            "version": "0.0.1-dev",
             "dist": {
                 "type": "path",
                 "url": "../modules/core",
-                "reference": "8f043e9fc03e20c41554f3ab23abeca65c704ad0"
+                "reference": "c780f1c91afedd4863db1c089c0a060aefabca81"
             },
             "require": {
                 "php": "^8.3"
@@ -379,11 +379,11 @@
         },
         {
             "name": "quintolin/storage",
-            "version": "dev-main",
+            "version": "0.0.1-dev",
             "dist": {
                 "type": "path",
                 "url": "../modules/storage",
-                "reference": "fafc262bf9977e70948b3d721203b59a7ee07462"
+                "reference": "bfcfd1cbb40f2e70264df33e869e99ffc0c4210c"
             },
             "require": {
                 "php": "^8.3",
