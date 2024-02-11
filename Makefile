@@ -22,6 +22,13 @@ git_push_tags:
 .PHONY: clean_all
 clean_all: website_clean_all
 
+# lint all `composer.json` files
+.PHONY: lint_composer_config
+lint_composer_config:
+	composer --strict --no-check-version --working-dir=modules/core validate
+	composer --strict --no-check-version --working-dir=modules/storage validate
+	composer --strict --no-check-version --working-dir=website validate
+
 # lint all files against EditorConfig settings
 .PHONY: lint_editorconfig
 lint_editorconfig:
