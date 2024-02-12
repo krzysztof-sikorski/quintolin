@@ -1,0 +1,20 @@
+name: PHP Coding Standards Fixer
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  php-cs-fixer:
+    name: Execute `php-cs-fixer`
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          key: php-cs-fixer
+          path: .php-cs-fixer.cache
+      - name: Execute `php-cs-fixer`
+        uses: docker://ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3
+        with:
+          args: check -vvv --show-progress=dots
