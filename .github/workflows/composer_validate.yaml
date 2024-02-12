@@ -1,0 +1,31 @@
+name: Validate Composer Files
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate_core:
+    name: Validate core module
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate files
+        run: composer validate --strict --no-check-version
+        working-directory: modules/core
+  validate_storage:
+    name: Validate storage module
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate files
+        run: composer validate --strict --no-check-version
+        working-directory: modules/storage
+  validate_website:
+    name: Validate website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate files
+        run: composer validate --strict --no-check-version
+        working-directory: website
