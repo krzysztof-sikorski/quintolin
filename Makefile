@@ -8,6 +8,10 @@ SHELL := /bin/sh
 default:
 	@echo "Please choose target explicitly."
 
+.PHONY: get_user
+get_user:
+	echo "ID:" $$(id --user)
+
 # git helper: push current branch to configured remotes
 .PHONY: git_push_current_branch
 git_push_current_branch:
@@ -32,17 +36,17 @@ lint_composer_config:
 # lint all files against EditorConfig settings
 .PHONY: lint_editorconfig
 lint_editorconfig:
-	docker container run --rm --user=$$UID --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
+	docker container run --rm --user=$$(id --user):$$(id --group) --volume=$$PWD:/check mstruebing/editorconfig-checker:2.7.2
 
 # lint PHP coding style across all directories
 .PHONY: lint_coding_style
 lint_coding_style:
-	docker container run --rm --user=$$UID --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 check -vvv --show-progress=dots
+	docker container run --rm --user=$$(id --user):$$(id --group) --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 check -vvv --show-progress=dots
 
 # fix PHP coding style across all directories
 .PHONY: fix_coding_style
 fix_coding_style:
-	docker container run --rm --user=$$UID --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 fix -vvv --show-progress=dots
+	docker container run --rm --user=$$(id --user):$$(id --group) --volume=$$PWD:/code ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3 fix -vvv --show-progress=dots
 
 # website: clean all temporary files (cache, logs, etc)
 .PHONY: website_clean_all
