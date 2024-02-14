@@ -17,4 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate files
-        run: composer validate --working-dir="${{ matrix.dir }}" --strict --no-check-version
+        run: >
+          composer validate
+          --working-dir="${{ matrix.dir }}"
+          --strict
+          --no-check-version
