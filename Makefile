@@ -8,10 +8,6 @@ SHELL := /bin/sh
 default:
 	@echo "Please choose target explicitly."
 
-.PHONY: get_user
-get_user:
-	echo "ID:" $$(id --user)
-
 # git helper: push current branch to configured remotes
 .PHONY: git_push_current_branch
 git_push_current_branch:
