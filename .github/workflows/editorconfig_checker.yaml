@@ -1,0 +1,14 @@
+name: EditorConfig Check
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  editorconfig_checker:
+    name: Execute `editorconfig-checker`
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute `php-cs-fixer`
+        uses: docker://mstruebing/editorconfig-checker:2.7.2
