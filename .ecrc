@@ -6,6 +6,7 @@
   "SpacesAftertabs": false,
   "NoColor": false,
   "Exclude": [
+    "^.git/",
     "^.idea/",
     "^.php-cs-fixer.cache$",
     "^doc/wayback_machine/",
