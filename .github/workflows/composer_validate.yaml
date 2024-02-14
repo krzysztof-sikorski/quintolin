@@ -5,27 +5,16 @@ on:
 permissions:
   contents: read
 jobs:
-  validate_core:
-    name: Validate core module
+  validate:
+    name: Validate `${{ matrix.dir }}`
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir:
+          - modules/core
+          - modules/storage
+          - website
     steps:
       - uses: actions/checkout@v4
       - name: Validate files
-        run: composer validate --strict --no-check-version
-        working-directory: modules/core
-  validate_storage:
-    name: Validate storage module
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Validate files
-        run: composer validate --strict --no-check-version
-        working-directory: modules/storage
-  validate_website:
-    name: Validate website
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Validate files
-        run: composer validate --strict --no-check-version
-        working-directory: website
+        run: composer validate --working-dir="${{ matrix.dir }}" --strict --no-check-version
