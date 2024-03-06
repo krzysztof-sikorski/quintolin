@@ -1,6 +1,7 @@
 lint-composer-validate:
   image:
     name: php:8.3
+  interruptible: true
   parallel:
     matrix:
       - WORKING_DIR:
@@ -18,6 +19,7 @@ lint-composer-validate:
 lint-editorconfig:
   image:
     name: mstruebing/editorconfig-checker:2.7.2
+  interruptible: true
   script:
     - ec -version
     - ec -verbose
