@@ -13,3 +13,9 @@ lint-composer-validate:
       --working-dir="$WORKING_DIR"
       --strict
       --no-check-version
+
+lint-editorconfig:
+  image: mstruebing/editorconfig-checker:2.7.2
+  script:
+    - ec -version
+    - ec -verbose
