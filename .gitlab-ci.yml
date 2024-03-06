@@ -1,5 +1,6 @@
 lint-composer-validate:
-  image: php:8.3
+  image:
+    name: php:8.3
   parallel:
     matrix:
       - WORKING_DIR:
@@ -15,7 +16,8 @@ lint-composer-validate:
       --no-check-version
 
 lint-editorconfig:
-  image: mstruebing/editorconfig-checker:2.7.2
+  image:
+    name: mstruebing/editorconfig-checker:2.7.2
   script:
     - ec -version
     - ec -verbose
