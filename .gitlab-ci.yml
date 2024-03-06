@@ -1,8 +1,3 @@
-image: php:8.3
-
-before_script:
-  - curl -sS https://getcomposer.org/installer | php
-
 lint-composer-validate:
   image: php:8.3
   parallel:
@@ -12,6 +7,7 @@ lint-composer-validate:
           - modules/storage
           - website
   script:
+    - curl -sS https://getcomposer.org/installer | php
     - >
       php composer.phar validate
       --working-dir="$WORKING_DIR"
