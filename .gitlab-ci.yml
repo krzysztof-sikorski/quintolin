@@ -8,6 +8,10 @@ lint-composer-validate:
           - modules/core
           - modules/storage
           - website
+  rules:
+    - changes:
+        paths:
+          - "$WORKING_DIR/composer.*"
   script:
     - curl -sS https://getcomposer.org/installer | php
     - >
