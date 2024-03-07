@@ -27,3 +27,14 @@ lint-editorconfig:
   script:
     - ec -version
     - ec -verbose
+
+lint-php-coding-style:
+  image:
+    name: ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3
+    entrypoint:
+      - ""
+  interruptible: true
+  script:
+    - ls -lah
+    - which php-cs-fixer
+    - php-cs-fixer check -vvv --format gitlab
