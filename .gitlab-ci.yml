@@ -1,3 +1,7 @@
+include:
+  - template: 'Jobs/Secret-Detection.gitlab-ci.yml'
+  - template: 'Security/SAST.gitlab-ci.yml'
+
 lint-composer-validate:
   image:
     name: 'php:8.3'
