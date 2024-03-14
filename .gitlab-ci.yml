@@ -1,19 +1,19 @@
 lint-composer-validate:
   image:
-    name: php:8.3
+    name: 'php:8.3'
   interruptible: true
   parallel:
     matrix:
       - WORKING_DIR:
-          - modules/core
-          - modules/storage
-          - website
+          - 'modules/core'
+          - 'modules/storage'
+          - 'website'
   rules:
     - changes:
         paths:
-          - "$WORKING_DIR/composer.*"
+          - '$WORKING_DIR/composer.*'
   script:
-    - curl -sS https://getcomposer.org/installer | php
+    - 'curl -sS https://getcomposer.org/installer | php'
     - >
       php composer.phar validate
       --working-dir="$WORKING_DIR"
@@ -22,19 +22,19 @@ lint-composer-validate:
 
 lint-editorconfig:
   image:
-    name: mstruebing/editorconfig-checker:2.7.2
+    name: 'mstruebing/editorconfig-checker:2.7.2'
   interruptible: true
   script:
-    - ec -version
-    - ec -verbose
+    - 'ec -version'
+    - 'ec -verbose'
 
 lint-php-coding-style:
   image:
-    name: ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3
+    name: 'ghcr.io/php-cs-fixer/php-cs-fixer:3.49-php8.3'
     entrypoint:
-      - ""
+      - ''
   interruptible: true
   script:
-    - ls -lah
-    - which php-cs-fixer
-    - php-cs-fixer check -vvv --format gitlab
+    - 'ls -lah'
+    - 'which php-cs-fixer'
+    - 'php-cs-fixer check -vvv --format gitlab'
